@@ -786,13 +786,13 @@ select {
   position: relative;
 }
 #time_slot_div::after {
-  content: url(../img/arrow-white-down.png);
+  content: url(/img/arrow-white-down.png);
   top: 8px;
   right: 30px;
   position: absolute;
 }
 #country_code_div::after {
-  content: url(../img/arrow-white-down.png);
+  content: url(/img/arrow-white-down.png);
   top: 8px;
   right: 10px;
   position: absolute;
@@ -801,7 +801,7 @@ select {
   padding-right: 12px;
 }
 input.loading {
-  background: url(../img/loading.gif) no-repeat right center !important;
+  background: url(/img/loading.gif) no-repeat right center !important;
   background-size: 25px !important;
 }
 .brown_heading img {
