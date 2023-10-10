@@ -10144,7 +10144,7 @@ a:hover {
   padding: 0 1.25rem 1rem;
 }
 .faq .accordion-button:not(.collapsed)::after {
-  background-image: url(../img/up-down.png) !important;
+  background-image: url(/img/up-down.png) !important;
   transform: rotate(-180deg);
 }
 .accordion-item :focus {
@@ -10154,7 +10154,7 @@ a:hover {
   flex-shrink: 0;
   margin-left: auto;
   content: "";
-  background-image: url(../img/up-down.png) !important;
+  background-image: url(/img/up-down.png) !important;
   background-repeat: no-repeat;
   transition: transform 0.2s ease-in-out;
   background-size: contain;
