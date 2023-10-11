@@ -535,6 +535,7 @@ div.learn_side {
   .yellow_heading {
     font-size: 17px !important;
   }
+  
   #people > h3,
   #who > h3,
   #testimonials > h3,
@@ -1014,6 +1015,10 @@ input.loading {
   border-radius: 30px; 
   cursor: pointer; 
   text-align: center;
+}
+
+.rounded-whats-img{
+  border-radius: 25%;
 }
 
 .loader {

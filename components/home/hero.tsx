@@ -30,7 +30,7 @@ function Hero({}: Props) {
                 With Mudgar</h1>
               <h2>Basic to intermediate 3 months Mudgar Swings</h2>
               <div>
-                <a href="index.html#register_form" id="register_now_btn" className="btn-get-started scrollto register-now-track-btn" data-btn="main-cta">Register Now</a>
+                <a href="#register_form" id="register_now_btn" className="btn-get-started scrollto register-now-track-btn" data-btn="main-cta">Register Now</a>
               </div>
               <div className="people_joined"><span id="user_count">
                   408 </span> people have already joined</div>

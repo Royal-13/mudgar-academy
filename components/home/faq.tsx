@@ -7,11 +7,11 @@ function FAQ({ }: Props) {
             
               <div id="faq" className="white_block text-center faq">
                 <div className="faq_mobile">
-                  <img loading="lazy" className="img-fluid" srcSet="/img/faqs/tiny/faq-2-tiny.webp 480w,/img/faqs/tiny/faq-2-tiny.webp 800w" sizes="(max-width: 600px) 480px, 800px" src="/img/faqs/tiny/faq-2-tiny.webp" id="faq_image" />
+                  <img loading="lazy" className="img-fluid" srcSet="/img/faqs/tiny/faq-image.webp 480w,/img/faqs/tiny/faq-image.webp 800w" sizes="(max-width: 600px) 480px, 800px" src="/img/faqs/tiny/faq-image.webp" id="faq_image" />
                 </div>
                 <h3 className="brown_heading py-3">FAQs</h3>
                 <div className="faq_desktop">
-                  <img loading="lazy" className="img-fluid" srcSet="/img/faqs/tiny/faq-2-tiny.webp 480w,/img/faqs/tiny/faq-2-tiny.webp 800w" sizes="(max-width: 600px) 480px, 800px" src="/img/faqs/tiny/faq-2-tiny.webp" />
+                  <img loading="lazy" className="img-fluid" srcSet="/img/faqs/tiny/faq-image.webp 480w,/img/faqs/tiny/faq-image.webp 800w" sizes="(max-width: 600px) 480px, 800px" src="/img/faqs/tiny/faq-image.webp" />
                 </div>
 
                 <div className="accordion" id="accordionExample">

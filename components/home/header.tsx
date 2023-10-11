@@ -9,7 +9,7 @@ function Header({}: Props) {
     <header id="header" className="fixed-top">
       <div className="container d-flex align-items-center justify-content-between my-1 px-4">
         <h1 className="logo">
-          <a href="index.html">
+          <a href="/">
             <img
               loading="lazy"
               src="/img/mudgarclub_logo.jpg"
