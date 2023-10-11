@@ -11,10 +11,8 @@ const index = () => {
               <div className="container">
                   <div className="row">
                       <div className="col-lg-9">
-                          <h3 className="brown_heading py-3">Courses</h3>
                           <SectionThree />
                           <RegisterForm />
-                          
                       </div>
                       <div className="right_block_container">
                           <Float />
