@@ -35,7 +35,7 @@ function Header({}: Props) {
               <a
                 className="nav-link scrollto menu-btn"
                 data-menu="benefit"
-                href="#benefits"
+                href="/#benefits"
               >
                 Benefits
               </a>
@@ -44,7 +44,7 @@ function Header({}: Props) {
               <a
                 className="nav-link scrollto menu-btn"
                 data-menu="faq"
-                href="#faq"
+                href="/#faq"
               >
                 FAQs
               </a>
@@ -53,7 +53,7 @@ function Header({}: Props) {
               <a
                 className="nav-link scrollto menu-btn"
                 data-menu="about"
-                href="#about"
+                href="/#about"
               >
                 About
               </a>
@@ -63,7 +63,7 @@ function Header({}: Props) {
               <a
                 className="nav-link scrollto register-now register-now-track-btn"
                 data-btn="top-bar"
-                href="#register_form"
+                href="/#register_form"
               >
                 Get Started
               </a>
