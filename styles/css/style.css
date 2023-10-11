@@ -26,6 +26,7 @@ div#thumb_0 {
   background: #000;
 }
 .right_block {
+  font-size: 2rem;
   width: 19%;
 }
 @media (max-width: 768px) {

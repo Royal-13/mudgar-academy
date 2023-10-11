@@ -87,6 +87,10 @@ h6 {
 h1 {
   font-size: calc(1.375rem+1.5vw);
 }
+.register_desktop{
+  margin-left: 2rem;
+  display: block;
+}
 @media (min-width: 1200px) {
   .h1,
   h1 {
@@ -10717,36 +10721,43 @@ a:hover {
 }
 @media (max-width: 1920px) {
   .register_desktop {
+    display: block;
     right: 16.2%;
   }
 }
 @media (max-width: 1740px) {
   .register_desktop {
+    display: block;
     right: 13%;
   }
 }
 @media (max-width: 1600px) {
   .register_desktop {
+    display: block;
     right: 10%;
   }
 }
 @media (max-width: 1450px) {
   .register_desktop {
+    display: block;
     right: 6%;
   }
 }
 @media (max-width: 1366px) {
   .register_desktop {
+    display: block;
     right: 8.5%;
   }
 }
 @media (max-width: 1280px) {
   .register_desktop {
+    display: block;
     right: 6.5%;
   }
 }
 @media (max-width: 1200px) {
   .register_desktop {
+    display: block;
     right: 3.5%;
   }
   .social_media a {
@@ -10766,6 +10777,7 @@ a:hover {
 }
 @media (max-width: 1024px) {
   .register_desktop {
+    display: block;
     right: 1.5%;
   }
 }
