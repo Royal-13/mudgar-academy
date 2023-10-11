@@ -9810,7 +9810,7 @@ a:hover {
   color: #fff;
   border-radius: 50px;
   font-family: Nunito;
-  width: 232px;
+  width: auto;
   transition: 0.3s all ease-in-out;
   box-shadow: 0 10px 10px #f1e4d2;
 }

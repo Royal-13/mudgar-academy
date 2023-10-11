@@ -1,5 +1,6 @@
 import React from "react";
 import * as $ from 'jquery';
+import MyComponent from "./countdown";
 
 
 type Props = {};
@@ -25,11 +26,11 @@ function Hero({}: Props) {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 pt-4">
-              <h1 id="title">Movement 
+              <h1 id="title">Movement<br/>
                 With Mudgar</h1>
               <h2>Basic to intermediate 3 months Mudgar Swings</h2>
               <div>
-                <a href="index.html#register_form" id="register_now_btn" className="btn-get-started scrollto register-now-track-btn" data-btn="main-cta">Register Now<img loading="lazy" className="btn_arrow" id="register-arrow" src="resources/img/btn-arrow.png" alt="Arrow" width="20px" height="14px" style={{display: 'none'}} /></a>
+                <a href="index.html#register_form" id="register_now_btn" className="btn-get-started scrollto register-now-track-btn" data-btn="main-cta">Register Now</a>
               </div>
               <div className="people_joined"><span id="user_count">
                   408 </span> people have already joined</div>
@@ -43,14 +44,15 @@ function Hero({}: Props) {
                     <div className="block"><div className="counter_digit seconds" /><span>secs</span></div>
                   </div>
                 </div>
+                <MyComponent/>
               </div>
             </div>
             <div className="col-lg-6 pt-4 main_video pe-0 pe-sm-5 d-flex align-content-end" id="homepageimage">
                 <div className="video_container top_video p-0 mx-3 me-sm-5" id="thumb_0">
                 <picture>
-                <source srcSet="resources/img/yt_thumbnail_test.jpg" style={{ borderRadius: '30px', cursor: 'pointer', textAlign: 'center' }} onClick={() => youtubeVideoPlay(0, 'https://www.youtube.com/embed/V5IebYv2kIw?si=XcRmundmdqoR_ekC')} />
-                <source srcSet="resources/img/yt_thumbnail_test.jpg" media="(max-width: 400px)" style={{ borderRadius: '30px', width: '100%', cursor: 'pointer', textAlign: 'center' }} onClick={() => youtubeVideoPlay(0, 'https://www.youtube.com/embed/V5IebYv2kIw?si=XcRmundmdqoR_ekC')} />
-                <img loading="eager" id="mobile-width-fix" src="resources/img/yt_thumbnail_test.jpg" style={{ borderRadius: '30px', cursor: 'pointer', textAlign: 'center' }} onClick={() => youtubeVideoPlay(0, 'https://www.youtube.com/embed/V5IebYv2kIw?si=XcRmundmdqoR_ekC')} />
+                <source className="style-remove" srcSet="/img/yt_thumbnail_test.jpg" onClick={() => youtubeVideoPlay(0, 'https://www.youtube.com/embed/V5IebYv2kIw?si=XcRmundmdqoR_ekC')} />
+                <source className="style-remove-1"srcSet="/img/yt_thumbnail_test.jpg" media="(max-width: 400px)" onClick={() => youtubeVideoPlay(0, 'https://www.youtube.com/embed/V5IebYv2kIw?si=XcRmundmdqoR_ekC')} />
+                <img className="style-remove" loading="eager" id="mobile-width-fix" src="/img/yt_thumbnail_test.jpg" onClick={() => youtubeVideoPlay(0, 'https://www.youtube.com/embed/V5IebYv2kIw?si=XcRmundmdqoR_ekC')} />
                 </picture>
             </div>
         </div>

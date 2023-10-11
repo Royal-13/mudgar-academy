@@ -634,7 +634,7 @@ div#thumb_0 {
     width: 230px !important;
   }
   #register-arrow {
-    display: none !important;
+    display: none;
   }
 }
 div#mob_error,
@@ -1003,7 +1003,17 @@ input.loading {
 #verification_code:focus {
   outline: none;
 }
-
+.style-remove{
+  border-radius: 30px; 
+  cursor: pointer; 
+  text-align: center;
+}
+.style-remove-1{
+  width: 100%;
+  border-radius: 30px; 
+  cursor: pointer; 
+  text-align: center;
+}
 
 .loader {
   position: fixed;

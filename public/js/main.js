@@ -243,6 +243,7 @@ var countries = [
   { value: "+260", data: "+260", code: "ZM" },
   { value: "+263", data: "+263", code: "ZW" },
 ];
+(function($) {
 $(document).ready(function () {
   $(".thumbnail").on("click", function (e) {
     e.preventDefault();
@@ -658,37 +659,37 @@ function removebtnActive() {
     testinomial_content[i].classList.remove("active");
   }
 }
-function verifyReferralCode() {
-  var join_referral_code = $("#join_referral_code").val();
-  var ajax_page_url = page_url + "ajax/checkout/";
-  $.ajax({
-    url: ajax_page_url,
-    type: "POST",
-    data: {
-      join_referral_code: join_referral_code,
-      sbmt_ajax: "verify_referral_code",
-    },
-    success: function (data) {
-      var msg = jQuery.parseJSON(data);
-      $("#ref_code").hide();
-      $("#join_referral_code_error").html(msg.message);
-      if (msg.check == "failed") {
-        $("#join_referral_code").val("");
-        $("#join_referral_code").attr("readonly", false);
-      }
-    },
-    error: function (xhr, status, error) {},
-  });
-}
-$(document).ready(function () {
-  if ($("#join_referral_code").val() != "") {
-    $("#join_referral_code").attr("readonly", true);
-    verifyReferralCode();
-  }
-  $("#join_referral_code").on("blur", function () {
-    verifyReferralCode();
-  });
-});
+// function verifyReferralCode() {
+//   var join_referral_code = $("#join_referral_code").val();
+//   var ajax_page_url = page_url + "/js/checkout/";
+//   $.ajax({
+//     url: ajax_page_url,
+//     type: "POST",
+//     data: {
+//       join_referral_code: join_referral_code,
+//       sbmt_ajax: "verify_referral_code",
+//     },
+//     success: function (data) {
+//       var msg = jQuery.parseJSON(data);
+//       $("#ref_code").hide();
+//       $("#join_referral_code_error").html(msg.message);
+//       if (msg.check == "failed") {
+//         $("#join_referral_code").val("");
+//         $("#join_referral_code").attr("readonly", false);
+//       }
+//     },
+//     error: function (xhr, status, error) {},
+//   });
+// }
+// $(document).ready(function () {
+//   if ($("#join_referral_code").val() != "") {
+//     $("#join_referral_code").attr("readonly", true);
+//     verifyReferralCode();
+//   }
+//   $("#join_referral_code").on("blur", function () {
+//     verifyReferralCode();
+//   });
+// });
 $(document).ready(function () {
   $("#register_now_btn").hover(
     function () {
@@ -1162,3 +1163,4 @@ function backForm() {
   $(".contact_form").removeClass("d-none");
   $(".update_details_form").addClass("d-none");
 }
+})(jQuery);
