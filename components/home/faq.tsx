@@ -3,10 +3,7 @@ type Props = {};
 function FAQ({ }: Props) {
 
   return (
-    <div id="included" className="Included">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-9">
+    
             <div id="about" className="white_block_no_padding about">
               <div id="faq" className="white_block text-center faq">
                 <div className="faq_mobile">
@@ -102,10 +99,7 @@ function FAQ({ }: Props) {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          
   )
 }
 export default FAQ;

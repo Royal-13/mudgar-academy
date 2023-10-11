@@ -1,13 +1,11 @@
 import React from "react";
 type Props = {};
-function SectionFour({}: Props) {
+function SectionFour({ }: Props) {
 
-return (
-    <div id="included" className="Included">
-    <div className="container">
-        <div className="row">
-          <div className="col-lg-9">
-    <div id="who" className="white_block who ">
+  return (
+
+    <>
+      <div id="who" className="white_block who ">
         <h3 className="brown_heading py-3">Who is this for? <img loading="lazy" src="/img/who/green_tick.webp" /></h3>
         <div className="row">
           <div className="col-lg-6">
@@ -83,10 +81,11 @@ return (
           </div>
         </div>
       </div>
-      </div>
-      </div>
-      </div>
-      </div>
-    )
+
+    </>
+
+
+
+  )
 }
 export default SectionFour;
