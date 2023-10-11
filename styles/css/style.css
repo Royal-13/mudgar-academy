@@ -598,7 +598,7 @@ div#thumb_0 {
 }
 .accordion-item,
 .testimonial_video {
-  display: none;
+  display: block;
 }
 #hero h1 {
   white-space: pre-line;
