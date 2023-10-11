@@ -12,10 +12,10 @@ function Header({}: Props) {
           <a href="index.html">
             <img
               loading="lazy"
-              src="resources/img/doit"
+              src="/img/mudgarclub_logo.jpg"
               alt="Logo"
-              width="250px"
-              height="250px"
+              width="70px"
+              height="70px"
             />
           </a>
         </h1>
@@ -25,17 +25,17 @@ function Header({}: Props) {
               <a
                 className="nav-link scrollto menu-btn"
                 data-menu="benefit"
-                href="/"
-                target="_blank"
+                href="/courses"
+                target=""
               >
-                Workshop Login
+                Courses
               </a>
             </li>
             <li>
               <a
                 className="nav-link scrollto menu-btn"
                 data-menu="benefit"
-                href="index.html#benefits"
+                href="#benefits"
               >
                 Benefits
               </a>
@@ -44,7 +44,7 @@ function Header({}: Props) {
               <a
                 className="nav-link scrollto menu-btn"
                 data-menu="faq"
-                href="index.html#faq"
+                href="#faq"
               >
                 FAQs
               </a>
@@ -53,7 +53,7 @@ function Header({}: Props) {
               <a
                 className="nav-link scrollto menu-btn"
                 data-menu="about"
-                href="index.html#about"
+                href="#about"
               >
                 About
               </a>
@@ -63,9 +63,9 @@ function Header({}: Props) {
               <a
                 className="nav-link scrollto register-now register-now-track-btn"
                 data-btn="top-bar"
-                href="index.html#register_form"
+                href="#register_form"
               >
-                Register Now
+                Get Started
               </a>
             </li>
           </ul>

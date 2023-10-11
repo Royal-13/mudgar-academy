@@ -27,7 +27,7 @@ function Host({ }: Props) {
             </p>
           </div>
           {/* <div class="col-lg-6">
-<img loading="lazy" class="about_img" srcset="/resources/img/faqs/About_the_Host_3_-_Himadri.jpg 480w,/resources/img/faqs/About_the_Host_3_-_Himadri.jpg 800w" sizes="(max-width: 600px) 480px, 800px" src="resources/img/faqs/About_the_Host_3_-_Himadri.jpg">
+<img loading="lazy" class="about_img" srcset="//img/faqs/About_the_Host_3_-_Himadri.jpg 480w,//img/faqs/About_the_Host_3_-_Himadri.jpg 800w" sizes="(max-width: 600px) 480px, 800px" src="/img/faqs/About_the_Host_3_-_Himadri.jpg">
 <h4 class="brown_heading mt-4 mb-3" id="hostname" style="font-size: 30px;">Himadri Pareek</h4>
 <p class="aboput_text px-0 px-md-5">
 <span class="d-block">Himadri, is a young and dynamic Satvic health educator from Jaipur and has been a part of the Satvic Team for more than 2 years. She trained intensively to be an educator and she currently leads the 4-hour Health Transformation Workshops, 3-Day Juice Fast and now co-hosts the Movement With Mudgar along with Subah. Till date, Himadri has hosted more workshops for over 6000 people.</span>

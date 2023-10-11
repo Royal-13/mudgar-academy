@@ -9555,7 +9555,7 @@ a:hover {
   font-weight: 400;
 }
 #header .logo img {
-  max-height: 40px;
+
 }
 #footer {
   box-shadow: 0 -5px 8px #f3f3f3;
@@ -10734,7 +10734,7 @@ a:hover {
 @media (max-width: 1600px) {
   .register_desktop {
     display: block;
-    right: 10%;
+    right: 5%;
   }
 }
 @media (max-width: 1450px) {
