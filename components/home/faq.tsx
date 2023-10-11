@@ -58,7 +58,7 @@ function FAQ({ }: Props) {
                         Yes, the weight assigned to mudgar movements is suitable for someone who is starting theirjourney with mudgar. </div>
                     </div>
                   </div>
-                  <div className="accordion-item">
+                  {/* <div className="accordion-item">
                     <h2 className="accordion-header" id="heading5">
                       <button className="accordion-button collapsed" data-q_no={5} type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
                         What are the charges for this course? </button>
@@ -97,7 +97,7 @@ function FAQ({ }: Props) {
                       <div className="accordion-body">
                         Please do not worry, if you miss any session, you can continue from the next session. We share detailed notes for each session on our dashboard, you can study them and stay up to date. </div>
                     </div>
-                  </div>
+                  </div> */}
                   {/* <a class="load_more" id="load" href="#">Load More</a> */}
                 </div>
               </div>
