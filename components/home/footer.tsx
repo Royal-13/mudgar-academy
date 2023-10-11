@@ -7,7 +7,7 @@ function Footer({ }: Props) {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-6 footer_column_1">
-            <a href="index.html"><img loading="lazy" src="/img/mudgarclub_logo.jpg" alt="icon" width={40} height={40} /></a>
+            <a href="/"><img loading="lazy" src="/img/mudgarclub_logo.jpg" alt="icon" width={40} height={40} /></a>
             <p className="copyright1 mt-4">©2022 Mudgar | <a href="https://mudgarclub.com/policy?page_type=3" target="_blank">Privacy Policy</a></p>
           </div>
           <div className="content-uhc" style={{ display: 'none' }}>

@@ -1,6 +1,6 @@
 .navbar a,
 .navbar a:focus {
-  font-family: Nunito;
+  font-family: "Nunito","sans-serif";
 }
 .navbar a.register-now {
   margin-left: 40px;
