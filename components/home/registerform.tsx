@@ -6,14 +6,14 @@ function RegisterForm({ }: Props) {
 
     <div id="register_form" className="register_form text-center">
         <h3 className="register_tag">Register Now</h3>
-        <div className="register_mobile_details">
+        {/* <div className="register_mobile_details">
           <span className="date-and-time"><img loading="lazy" src="/img/date-white.png" alt="Date" width={100} height={100} />
             4th Sep - 24th Sep everyday </span>
           <span className="date-and-time d-flex"><img loading="lazy" src="/img/time-white.png" alt="Date" width={100} height={100} />
             6 - 7 AM (IST) or 8 - 9 AM (IST)
           </span>
           <span className="date-and-time"><img loading="lazy" src="/img/rupee-white.png" alt="Date" width={100} height={100} /> Contribution: Rs: 590</span>
-        </div>
+        </div> */}
         <form style={{display: 'none'}} id="rxp_frm">
           <input type="hidden" name="razorpay_payment_id" id="razorpay_payment_id" />
           <input type="hidden" name="razorpay_signature" id="razorpay_signature" />
