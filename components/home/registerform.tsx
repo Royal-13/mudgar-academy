@@ -125,7 +125,7 @@ function RegisterForm({ }: Props) {
                 <div className="form-check radio-container checkbox-space">
                   <input className="form-check-input" type="checkbox" defaultValue = "" id="terms" />
                   <label className="form-check-label ps-0 pb-0" htmlFor="terms">
-                    I agree and accept the <a href="terms_condition.html" target="_blank">terms and conditions</a>.
+                    I agree and accept the <a href="/terms" target="_blank">terms and conditions</a>.
                   </label>
                   <div id="terms_error" />
                 </div>
@@ -133,7 +133,7 @@ function RegisterForm({ }: Props) {
                 <div className="form-check radio-container checkbox-space">
                   {/* <input className="form-check-input" defaultValue = "" id="terms" /> */}
                   <label className="form-check-label ps-0 pb-0" htmlFor="terms">
-                    Already Signed Up? <a href="/" target="_blank">click here </a>to login.
+                    Already Signed Up? <a href="/login" target="_blank">click here </a>to login.
                   </label>
                   <div id="terms_error" />
                 </div>
