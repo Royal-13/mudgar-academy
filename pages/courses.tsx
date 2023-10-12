@@ -11,7 +11,7 @@ const index = () => {
         <section id="included" className="Included">
           <div className="container">
             <div className="row">
-              <div className="col-lg-9">
+              <div className="col-lg-9 cols-margin">
                 <div
                   id="curriculum"
                   className="white_block text-center curriculum"
