@@ -59,6 +59,15 @@ function Header({}: Props) {
               </a>
             </li>
             <li>
+              <a
+                className="nav-link scrollto menu-btn"
+                data-menu="login"
+                href="/login"
+              >
+                Login
+              </a>
+            </li>
+            <li>
               {" "}
               <a
                 className="nav-link scrollto register-now register-now-track-btn"

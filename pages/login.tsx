@@ -1,23 +1,39 @@
-import Header from '@/components/home/header'
-import RegisterForm from '@/components/home/registerform'
-import React from 'react'
+import Header from "@/components/home/header";
+import React, { useState } from "react";
 
-type Props = {}
+const LoginPage: React.FC = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-function login({ }: Props) {
+  const handleLogin = () => {};
+
   return (
-    <main id='main'>
+    <>
       <Header />
-      <div className='container'>
-        <div className='row'>
-          <div className='col-lg-9 cols-margin-both'>
-            <RegisterForm />
-          </div>
+      <div className="login-container">
+        <div className="login-form">
+          <h2 className="login-h2">Login</h2>
+          <input
+            className="login-input"
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            className="login-input"
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button className="login-button" onClick={handleLogin}>
+            Login
+          </button>
         </div>
       </div>
+    </>
+  );
+};
 
-    </main>
-  )
-}
-
-export default login
+export default LoginPage;

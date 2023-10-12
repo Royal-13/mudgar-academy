@@ -26,16 +26,17 @@ const index = () => {
                               loading="lazy"
                               src="/img/habit2/tiny/shoulder.png"
                               alt="healthy"
-                              className="w-100"
+                              className=""
                             />
                           </div>
                         </div>
                         <div className="curr_right d-flex d-sm-block align-content-center flex-wrap">
                           <div className="heading_cur1">
-                            Swing 1 - Shoulder and chest-targeted swings
+                          COMPLEMENTARY MUDGAR:
                           </div>
                           <div className="heading_cur3">
-                            Swings that target the shoulders and chest.
+                          As part of this course, a mudgar weighing 5-6kgs will be provided to men, and a mudgar weighing
+3-4kgs will be provided to women, so you don't have to buy it separately.
                           </div>
                         </div>
                         <div className="curr_left">
@@ -44,16 +45,16 @@ const index = () => {
                               loading="lazy"
                               src="/img/habit2/tiny/muscles.png"
                               alt="healthy"
-                              className="w-100"
+                              className=""
                             />
                           </div>
                         </div>
                         <div className="curr_right d-flex d-sm-block align-content-center flex-wrap">
                           <div className="heading_cur1">
-                            Swing 2 - Tricep and bicep-focused swings
+                          45-MINUTE LIVE CLASS:
                           </div>
                           <div className="heading_cur3">
-                            Swings that target the triceps and biceps.
+                          For the next three months, a 45-minute live class will be conducted from Monday to Friday.
                           </div>
                         </div>
                         <div className="curr_left">
@@ -62,16 +63,17 @@ const index = () => {
                               loading="lazy"
                               src="/img/habit2/tiny/hand.png"
                               alt="healthy"
-                              className="w-100"
+                              className=""
                             />
                           </div>
                         </div>
                         <div className="curr_right d-flex d-sm-block align-content-center flex-wrap">
                           <div className="heading_cur1">
-                            Swing 3 - Wrist and forearm-targeted swings
+                           RECORDED SESSIONS OF EVERY CLASS:
                           </div>
                           <div className="heading_cur3">
-                            Swings that target the wrists and forearms.
+                          Daily recorded sessions of all classes will be available for the next three months from the start of
+the course.
                           </div>
                         </div>
                         <div className="curr_left">
@@ -80,16 +82,17 @@ const index = () => {
                               loading="lazy"
                               src="/img/habit2/tiny/spine.png"
                               alt="healthy"
-                              className="w-100"
+                              className=""
                             />
                           </div>
                         </div>
                         <div className="curr_right d-flex d-sm-block align-content-center flex-wrap">
                           <div className="heading_cur1">
-                            Swing 4 - Core and spine-focused swings
+                          COMMUNITY OF THOUSANDS OF PEOPLE:
                           </div>
                           <div className="heading_cur3">
-                            Swings that target the spine and core.
+                          You will have the opportunity to connect and grow with like-minded people and become part of
+the biggest mudgar club possible for the next three months.
                           </div>
                         </div>
                         <div className="curr_left">
@@ -98,16 +101,17 @@ const index = () => {
                               loading="lazy"
                               src="/img/habit2/tiny/leg.png"
                               alt="healthy"
-                              className="w-100"
+                              className=""
                             />
                           </div>
                         </div>
                         <div className="curr_right d-flex d-sm-block align-content-center flex-wrap">
                           <div className="heading_cur1">
-                            Swing 5 - Leg-targeted swings
+                          MUDGAR MAINTENANCE:
                           </div>
                           <div className="heading_cur3">
-                            Swings that target the legs.
+                          We will teach you how to take care of your mudgar in the long run since it is made of premium
+quality Mahaghony Wood.
                           </div>
                         </div>
                       </div>

@@ -9,7 +9,7 @@ function SectionThree({ }: Props) {
                 <div className="content-item active">
                   <div className="grid gtc curr-sm-2 curr-md-2 curr-lg-2 curr_grid">
                     <div className="curr_left">
-                      <div className="heading_cur1 habit_icon"><img loading="lazy" src="/img/habit2/tiny/shoulder.png" alt="healthy" className="w-100" /></div>
+                      <div className="heading_cur1 habit_icon"><img loading="lazy" src="/img/habit2/tiny/shoulder.png" alt="swings" className="" /></div>
                     </div>
                     <div className="curr_right d-flex d-sm-block align-content-center flex-wrap">
                       <div className="heading_cur1">Swing 1 - Shoulder and chest-targeted swings
@@ -18,7 +18,7 @@ function SectionThree({ }: Props) {
                       </div>
                     </div>
                     <div className="curr_left">
-                      <div className="heading_cur1 habit_icon m-0 p-0"><img loading="lazy" src="/img/habit2/tiny/muscles.png" alt="healthy" className="w-100" /></div>
+                      <div className="heading_cur1 habit_icon m-0 p-0"><img loading="lazy" src="/img/habit2/tiny/muscles.png" alt="swings" className="" /></div>
                     </div>
                     <div className="curr_right d-flex d-sm-block align-content-center flex-wrap">
                       <div className="heading_cur1">Swing 2 - Tricep and bicep-focused swings
@@ -27,7 +27,7 @@ function SectionThree({ }: Props) {
                       </div>
                     </div>
                     <div className="curr_left">
-                      <div className="heading_cur1 habit_icon m-0 p-0"><img loading="lazy" src="/img/habit2/tiny/hand.png" alt="healthy" className="w-100" /></div>
+                      <div className="heading_cur1 habit_icon m-0 p-0"><img loading="lazy" src="/img/habit2/tiny/hand.png" alt="swings" className="" /></div>
                     </div>
                     <div className="curr_right d-flex d-sm-block align-content-center flex-wrap">
                       <div className="heading_cur1">Swing 3 - Wrist and forearm-targeted swings
@@ -36,7 +36,7 @@ function SectionThree({ }: Props) {
                       </div>
                     </div>
                     <div className="curr_left">
-                      <div className="heading_cur1 habit_icon m-0 p-0"><img loading="lazy" src="/img/habit2/tiny/spine.png" alt="healthy" className="w-100" /></div>
+                      <div className="heading_cur1 habit_icon m-0 p-0"><img loading="lazy" src="/img/habit2/tiny/spine.png" alt="swings" className="" /></div>
                     </div>
                     <div className="curr_right d-flex d-sm-block align-content-center flex-wrap">
                       <div className="heading_cur1">Swing 4 - Core and spine-focused swings
@@ -45,7 +45,7 @@ function SectionThree({ }: Props) {
                       </div>
                     </div>
                     <div className="curr_left">
-                      <div className="heading_cur1 habit_icon m-0 p-0"><img loading="lazy" src="/img/habit2/tiny/leg.png" alt="healthy" className="w-100" /></div>
+                      <div className="heading_cur1 habit_icon m-0 p-0"><img loading="lazy" src="/img/habit2/tiny/leg.png" alt="swings" className="" /></div>
                     </div>
                     <div className="curr_right d-flex d-sm-block align-content-center flex-wrap">
                       <div className="heading_cur1">Swing 5 - Leg-targeted swings
