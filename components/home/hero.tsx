@@ -49,11 +49,11 @@ function Hero({}: Props) {
             </div>
             <div className="col-lg-6 pt-4 main_video pe-0 pe-sm-5 d-flex align-content-end" id="homepageimage">
                 <div className="video_container top_video p-0 mx-3 me-sm-5" id="thumb_0">
-                {/* <picture>
+                <picture>
                 <source className="style-remove" srcSet="/img/yt_thumbnail_test.jpg" onClick={() => youtubeVideoPlay(0, 'https://www.youtube.com/embed/V5IebYv2kIw?si=XcRmundmdqoR_ekC')} />
-                <source className="style-remove-1"srcSet="/img/yt_thumbnail_test.jpg" media="(max-width: 400px)" onClick={() => youtubeVideoPlay(0, 'https://www.youtube.com/embed/V5IebYv2kIw?si=XcRmundmdqoR_ekC')} />
-                <img className="style-remove" loading="eager" id="mobile-width-fix" src="/img/yt_thumbnail_test.jpg" onClick={() => youtubeVideoPlay(0, 'https://www.youtube.com/embed/V5IebYv2kIw?si=XcRmundmdqoR_ekC')} />
-                </picture> */}
+                <source className="style-remove-1"srcSet="/img/yt_thumbnail_test.jpg" media="(max-width: 400px)" onClick={() => youtubeVideoPlay(0, 'https://www.youtube.com/embed/V5IebYv2kIw?si=vxALag6OKYd11m66')} />
+                <iframe loading="lazy" width="100%" height="360" id="mobile-banner-videos" src="https://www.youtube.com/embed/V5IebYv2kIw?si=vxALag6OKYd11m66" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+                </picture>
             </div>
         </div>
     </div>
