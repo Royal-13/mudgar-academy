@@ -9,7 +9,7 @@ function SectionThree({ }: Props) {
                 <div className="content-item active">
                   <div className="grid gtc curr-sm-2 curr-md-2 curr-lg-2 curr_grid">
                     <div className="curr_left">
-                      <div className="heading_cur1 habit_icon"><img loading="lazy" src="/img/habit2/tiny/shoulder.png" alt="swings" className="" /></div>
+                      <div className="heading_cur1 habit_icon"><img loading="lazy" src="/img/habit2/tiny/1000.png" alt="swings" className="" /></div>
                     </div>
                     <div className="curr_right d-flex d-sm-block align-content-center flex-wrap">
                       <div className="heading_cur1">Swing 1 - Shoulder and chest-targeted swings
@@ -18,7 +18,7 @@ function SectionThree({ }: Props) {
                       </div>
                     </div>
                     <div className="curr_left">
-                      <div className="heading_cur1 habit_icon m-0 p-0"><img loading="lazy" src="/img/habit2/tiny/muscles.png" alt="swings" className="" /></div>
+                      <div className="heading_cur1 habit_icon m-0 p-0"><img loading="lazy" src="/img/habit2/tiny/1001.png" alt="swings" className="" /></div>
                     </div>
                     <div className="curr_right d-flex d-sm-block align-content-center flex-wrap">
                       <div className="heading_cur1">Swing 2 - Tricep and bicep-focused swings

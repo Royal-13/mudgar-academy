@@ -10,6 +10,7 @@ import BenefitsSection from "./benefitsSection"
 import RegisterForm from "./registerform"
 import Float from "./float"
 import Footer from "./footer"
+import Testimonial from "./testimonials"
 
 export default function HomePage() {
   return (
@@ -29,6 +30,7 @@ export default function HomePage() {
               <div className="col-lg-9">
                 <BenefitsSection />
                 <SectionThree />
+                <Testimonial/>
                 <SectionFour />
                 <FAQ />
                 <Host />
