@@ -1,11 +1,44 @@
 import Header from "@/components/home/header";
+import { createServerSupabaseClient } from "@supabase/auth-helpers-nextjs";
+import { useSupabaseClient } from "@supabase/auth-helpers-react";
+import { GetServerSidePropsContext } from "next";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 const LoginPage: React.FC = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [formData, setFormData] = useState({
+		name: '',
+		email: '',
+		phoneNumber: '',
+		password: '',
+	});
 
-  const handleLogin = () => {};
+	const { name, email, phoneNumber, password } = formData;
+	const supabaseClient = useSupabaseClient();
+
+	const onChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+
+	const router = useRouter();
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		const { data, error } = await supabaseClient.auth.signInWithPassword(
+			{
+				email: formData.email,
+				password: formData.password,
+			}
+		);
+		if (!error) {
+			
+			router.push('/');
+		}
+		else {
+			console.log("some error occured")
+		}
+
+
+	};
 
   return (
     <>
@@ -18,16 +51,16 @@ const LoginPage: React.FC = () => {
             type="email"
             placeholder="Email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={onChange}
           />
           <input
             className="login-input"
             type="password"
             placeholder="Password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={onChange}
           />
-          <button className="login-button" onClick={handleLogin}>
+          <button className="login-button" onClick={}>
             Login
           </button>
         </div>
@@ -37,3 +70,26 @@ const LoginPage: React.FC = () => {
 };
 
 export default LoginPage;
+
+export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
+  // Create authenticated Supabase Client
+  const supabase = createServerSupabaseClient(ctx);
+  // Check if we have a session
+  const {
+    data: { session }
+  } = await supabase.auth.getSession();
+
+  if (session)
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false
+      }
+    };
+
+  return {
+    props: {
+      initialSession: session,
+    }
+  };
+}
