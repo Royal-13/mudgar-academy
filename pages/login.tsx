@@ -86,7 +86,6 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
         permanent: false
       }
     };
-
   return {
     props: {
       initialSession: session,
