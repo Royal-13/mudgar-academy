@@ -2,9 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
+type Props = {
+  session?: boolean;
+};
 
-function Header({}: Props) {
+function Header({session}: Props) {
   return (
     <header id="header" className="fixed-top">
       <div className="container d-flex align-items-center justify-content-between my-1 px-4">
@@ -58,7 +60,18 @@ function Header({}: Props) {
                 About
               </a>
             </li>
-            <li>
+            {session ? (
+              <li>
+              <a
+                className="nav-link scrollto menu-btn"
+                data-menu="login"
+                href="/login"
+              >
+                Logout
+              </a>
+            </li>
+            ):(
+              <li>
               <a
                 className="nav-link scrollto menu-btn"
                 data-menu="login"
@@ -67,6 +80,7 @@ function Header({}: Props) {
                 Login
               </a>
             </li>
+            )}
             <li>
               {" "}
               <a
