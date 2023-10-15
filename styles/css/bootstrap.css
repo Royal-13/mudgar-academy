@@ -6427,7 +6427,7 @@ fieldset:disabled .btn {
 }
 .my-1 {
   margin-top: 0.25rem !important;
-  margin-bottom: 0.25rem !important;
+  /* margin-bottom: 0.25rem !important; */
 }
 .my-2 {
   margin-top: 0.5rem !important;
@@ -6569,7 +6569,7 @@ fieldset:disabled .btn {
 }
 .px-4 {
   padding-right: 1.5rem !important;
-  padding-left: 1.5rem !important;
+  /* padding-left: 1.5rem !important; */
 }
 .px-5 {
   padding-right: 3rem !important;

@@ -1,8 +1,13 @@
+import { getUser, supabaseAdmin } from "@/utils/supabase-admin";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useRouter } from "next/router";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import React, { useEffect, useRef, useState } from "react";
 type Props = {};
 function RegisterForm({}: Props) {
+
+  const supabase = useSupabaseClient();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,25 +17,42 @@ function RegisterForm({}: Props) {
     pincode: "",
     state: "",
     time_slot: "",
-    isMudgar: "",
+    isMudgar: "Yes",
     password: "",
   });
   const [isChecked, setIsChecked] = useState(false);
- const [single , setSingle] = useState(false)
- const countRef = useRef(0);
-  useEffect(()=>{
-    console.log("useEffect");
-    const Script = document.createElement("script");
-    //id should be same as given to form element
-    const Form = document.getElementById('donateForm');
-    Script.setAttribute('src','https://checkout.razorpay.com/v1/payment-button.js')
-    Script.setAttribute('data-payment_button_id','pl_HAhlCsCYFddwiq')
-    //@ts-ignore
-    Form.appendChild(Script);
-  },[])
+  const [single, setSingle] = useState(false);
+  const countRef = useRef(0);
+  // useEffect(()=>{
+  //   console.log("useEffect");
+  //   const Script = document.createElement("script");
+  //   //id should be same as given to form element
+  //   const Form = document.getElementById('donateForm');
+  //   Script.setAttribute('src','https://checkout.razorpay.com/v1/payment-button.js')
+  //   Script.setAttribute('data-payment_button_id','pl_HAhlCsCYFddwiq')
+  //   //@ts-ignore
+  //   Form.appendChild(Script);
+  // },[])
+
+  const addTrans = async (userId: string) => {
+    const { data, error } = await supabase.from("transactions").insert([
+      {
+        user_id: userId,
+        amount: 470000,
+        status: "pending",
+        payment_id: "pending",
+        is_mudgar: formData.isMudgar,
+        time_slot: formData.time_slot,
+      },
+    ]);
+    if(!error){
+      console.log("transaction added")
+    }
+  };
+
   const handleOnChange = () => {
     setIsChecked(!isChecked);
-  }
+  };
 
   const {
     name,
@@ -57,6 +79,43 @@ function RegisterForm({}: Props) {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formData);
+
+    let resLength = 0;
+    const res = await getUser(formData.email.toLowerCase()).then((result) => {
+      resLength = result.length;
+    });
+    if (resLength != 0) {
+      toast.error("User with this email already exists");
+    } else {
+      const { data, error } = await supabaseAdmin.auth.admin.createUser({
+        email: formData.email.toLowerCase(),
+        password: "Test123@",
+        user_metadata: {
+          full_name: formData.name,
+          phone_number: formData.phoneNumber,
+          city: formData.city,
+          address: formData.address,
+          pincode: formData.pincode,
+          state: formData.state,
+        },
+        email_confirm: true,
+      });
+      if (error) {
+        toast.error(error.message);
+      }
+      //get user from supabase
+      const data2 = getUser(formData.email!);
+      data2.then((data) => {
+        // console.log("datanewwww= ", data[0].id);
+        checkout(data[0].id);
+      });
+    }
+
+    async function checkout(id: string) {
+      addTrans(id);
+      router.push("https://razorpay.com/payment-button/pl_HAhlCsCYFddwiq/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button");
+    }
+
     //reset formdata
     setFormData({
       name: "",
@@ -70,20 +129,22 @@ function RegisterForm({}: Props) {
       isMudgar: "",
       password: "",
     });
-
-    // const { data, error } = await supabaseClient.auth.signInWithPassword({
-    //   email: formData.email,
-    //   password: formData.password,
-    // });
-    // if (!error) {
-    //   router.push("/");
-    // } else {
-    //   console.log("some error occured");
-    // }
   };
 
   return (
     <div id="register_form" className="register_form text-center">
+      <ToastContainer
+        position="bottom-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <h3 className="register_tag">Register Now</h3>
       {/* <div className="register_mobile_details">
           <span className="date-and-time"><img loading="lazy" src="/img/date-white.png" alt="Date" width={100} height={100} />
@@ -252,7 +313,7 @@ function RegisterForm({}: Props) {
               />
               <div id="state_error" />
             </div>
-            <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0 city_div">
+            {/* <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0 city_div">
               <select
                 name="isMudgar"
                 value={isMudgar}
@@ -265,7 +326,7 @@ function RegisterForm({}: Props) {
                 <option value={"no"}>No</option>
               </select>
               <div id="state_error" />
-            </div>
+            </div> */}
           </div>
 
           <div className="row ">
@@ -284,11 +345,7 @@ function RegisterForm({}: Props) {
                 className="custom-select"
               >
                 <option value="">Choose your time slot*</option>
-                <option
-                  value={607}
-                >
-                  6 AM (IST)
-                </option>
+                <option value={607}>6 AM (IST)</option>
                 <option
                   data-workshop_date="Monday, 13 November 2023"
                   value={708}
@@ -305,7 +362,7 @@ function RegisterForm({}: Props) {
                 </option>
                 <option
                   data-workshop_date="Monday, 13 November 2023"
-                  value={187}//18 hrs to 7 o clock
+                  value={187} //18 hrs to 7 o clock
                   data-timeslot="6 PM (IST)"
                 >
                   6 PM (IST)
@@ -388,7 +445,7 @@ function RegisterForm({}: Props) {
                   className="form-check-input"
                   type="checkbox"
                   defaultValue=""
-                  required  
+                  required
                   id="terms"
                 />
                 <label className="form-check-label ps-0 pb-0" htmlFor="terms">
@@ -402,13 +459,6 @@ function RegisterForm({}: Props) {
               </div>
               <div className="col-sm-12 col-lg-12 mb-3 mb-sm-0">
                 <div className="form-check radio-container checkbox-space">
-                  <input
-                    className="form-check-input"
-                    type="checkbox"
-                    defaultValue=""
-                    id="terms"
-                  />
-                  
                   <label className="form-check-label ps-0 pb-0" htmlFor="terms">
                     Already Signed Up?{" "}
                     <a href="/login" target="">
@@ -421,7 +471,7 @@ function RegisterForm({}: Props) {
               </div>
             </div>
           </div>
-          
+
           <button
             id="pay_button"
             className="btn-get-started"
