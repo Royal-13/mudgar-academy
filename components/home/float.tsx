@@ -58,6 +58,7 @@ const Float = () => {
         <div className="register_mobile_heading">
           <h3>Movement <br/>
             With Mudgar</h3>
+          <a href="/login" id="marg-1" className="btn-get-started scrollto right_register_text">Login</a>
           <a href="#register_form" className="btn-get-started scrollto right_register_text">Register</a>
         </div>
         <div className="register_mobile_detail">
@@ -65,6 +66,7 @@ const Float = () => {
           <span className="date-and-time register_count_mobile"><img loading="lazy" src="/img/group.png" alt="Group" width={100} height={100} /><span><strong>408</strong> registered</span></span>
         </div>
       </div>
+      
     </>
   );
 }
