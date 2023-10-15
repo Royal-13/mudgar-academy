@@ -13,10 +13,10 @@ import Footer from "./footer"
 import Testimonial from "./testimonials"
 import { type } from "os"
 
-
 type Props = {
   session: boolean;
 };
+
 export default function HomePage({session}: Props) {
   return (
     <>
@@ -25,7 +25,7 @@ export default function HomePage({session}: Props) {
       <main id="main">
         <section id="included" className="Included">
           <div className="container">
-            <SectionOne />  
+            <SectionOne />
           </div>
           <div className="container Included_Block">
             <SectionTwo />
@@ -45,10 +45,7 @@ export default function HomePage({session}: Props) {
                 <Float />
               </div>
             </div>
-
           </div>
-
-
         </section>
       </main>
       <Footer />

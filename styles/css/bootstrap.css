@@ -2091,9 +2091,9 @@ textarea.form-control-lg {
   background-color: #0d6efd;
   border-color: #0d6efd;
 }
-.form-check-input:checked[type="checkbox"] {
+/* .form-check-input:checked[type="checkbox"] {
   background-image: url(data:image/svg+xml;base64,PHN2Z3htbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyd2aWV3Qm94PScwMDIwMjAnPjxwYXRoZmlsbD0nbm9uZSdzdHJva2U9JyNmZmYnc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJ3N0cm9rZS1saW5lam9pbj0ncm91bmQnc3Ryb2tlLXdpZHRoPSczJ2Q9J002MTBsMzNsNi02Jy8+PC9zdmc+);
-}
+} */
 .form-check-input:checked[type="radio"] {
   background-image: url(data:image/svg+xml;base64,PHN2Z3htbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyd2aWV3Qm94PSctNC00ODgnPjxjaXJjbGVyPScyJ2ZpbGw9JyNmZmYnLz48L3N2Zz4=);
 }
