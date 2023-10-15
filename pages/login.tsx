@@ -1,4 +1,3 @@
-'use client';
 import Header from "@/components/home/header";
 import { createServerSupabaseClient } from "@supabase/auth-helpers-nextjs";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
