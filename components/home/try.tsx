@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./host-details.module.css"; // Import your CSS module
 
-type Props = {};
+type Props = {
+  session:boolean;
+};
 
-function HostDetail({}: Props) {
+function HostDetail({session}: Props) {
   return (
     <div className={styles.fullwidth}>
       <div className={styles["coach-container"]}>

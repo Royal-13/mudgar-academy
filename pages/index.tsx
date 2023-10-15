@@ -13,7 +13,6 @@ export default function Home() {
   const supabaseClient = useSupabaseClient();
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
 
-
   const user_session = async () => {
     const { data, error } = await supabaseClient.auth.getSession();
     return data.session;

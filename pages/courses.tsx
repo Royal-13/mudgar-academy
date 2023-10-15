@@ -2,11 +2,30 @@ import Float from "@/components/home/float";
 import Footer from "@/components/home/footer";
 import Header from "@/components/home/header";
 import RegisterForm from "@/components/home/registerform";
-import React from "react";
+import { useSupabaseClient } from "@supabase/auth-helpers-react";
+import React, { useState } from "react";
 const index = () => {
+  const supabaseClient = useSupabaseClient();
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
+
+
+  const user_session = async () => {
+    const { data, error } = await supabaseClient.auth.getSession();
+    return data.session;
+  };
+
+  const isSession2 = user_session()
+    .then((val) => {
+      if (val != null) {
+        setIsUserLoggedIn(true);
+      }
+    })
+    .catch((err) => {
+      console.log('err=', err);
+    });
   return (
     <>
-      <Header />
+      <Header session={isUserLoggedIn}/>
       <main id="main">
         <section id="included" className="Included">
           <div className="container">
