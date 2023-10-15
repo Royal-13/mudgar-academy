@@ -35,7 +35,7 @@ function Hero({}: Props) {
                   1200+ </span> people have already joined</div>
               <div className="gray_line" />
               <div className="countdown_desktop"><div className="counter_block">
-                  <div className="counter_block_text">Challenge starting in</div>
+                  <div className="counter_block_text">Limited Time Offer!!!</div>
                   <div id="clockdiv" className="counter_digit_block">
                     <div className="block"><div className="counter_digit days " /><span>days</span></div>
                     <div className="block"><div className="counter_digit hours" /><span>hours</span></div>
