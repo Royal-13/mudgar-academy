@@ -9556,7 +9556,7 @@ a:hover {
   text-transform: uppercase;
 }
 #header .logo a {
-  color: #898886;
+  color: #0c0c0c;
   font-size: 23px;
   font-weight: 400;
 }
@@ -9587,7 +9587,7 @@ a:hover {
   padding: 10px 0 10px 30px;
   font-size: 17px;
   font-weight: 400;
-  color: #898886;
+  color: #0c0c0c;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -9799,7 +9799,7 @@ a:hover {
   font-family: Nunito;
 }
 #hero h2 {
-  color: #636366;
+  color: #0c0c0c;
   margin: 10px 0 15px;
   font-size: 20px;
   font-family: Nunito;
@@ -9927,7 +9927,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .counter_block_text {
-  color: #586a92;
+  color: #965940;
   font-size: 17px;
   margin-bottom: 15px;
 }
@@ -9940,7 +9940,7 @@ a:hover {
   margin-left: 7.5px;
 }
 .counter_digit_block .block span {
-  color: #586a92;
+  color: #965940;
   font-size: 14px;
   text-align: center;
   display: block;
@@ -10029,7 +10029,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .brown_heading .gray {
-  color: #828285;
+  color: #0c0c0c;
   font-size: 15px;
   margin-top: 5px;
   display: block;
@@ -10043,12 +10043,12 @@ a:hover {
   margin-bottom: 20px;
 }
 .include_details h4 {
-  color: #586a92;
+  color: #965940;
   font-size: 20px;
   padding-top: 20px;
 }
 .include_text {
-  color: #818184;
+  color: #0c0c0c;
   font-size: 16px;
   padding-right: 30px;
 }
@@ -10072,7 +10072,7 @@ a:hover {
 }
 .benefits_desc {
   font-size: 17px;
-  color: #586a92;
+  color: #965940;
 }
 .benefits_block_content img {
   max-width: 100%;
@@ -10133,7 +10133,7 @@ a:hover {
   margin-bottom: 50px;
 }
 .faq .accordion-button:not(.collapsed) {
-  color: #586a92;
+  color: #965940;
   background-color: #fff;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
   font-size: 20px;
@@ -10149,7 +10149,7 @@ a:hover {
 }
 .faq .accordion-body {
   text-align: left;
-  color: #717173;
+  color: #0c0c0c;
   font-size: 16px;
   line-height: 25px;
   padding: 0 1.25rem 1rem;
@@ -10182,7 +10182,7 @@ a:hover {
   align-items: center;
   width: 100%;
   padding: 1rem 1.25rem;
-  color: #586a92;
+  color: #965940;
   text-align: left;
   background-color: #fff;
   border: 0;
@@ -10219,12 +10219,12 @@ a:hover {
   display: none;
 }
 .people_joined {
-  color: #666465;
+  color: #0c0c0c;
   font-size: 14px;
   margin-top: 20px;
 }
 .people_joined span {
-  color: #636366;
+  color: #0c0c0c;
   font-weight: 700;
 }
 .tabs {
@@ -10233,7 +10233,7 @@ a:hover {
 .tab {
   display: inline-block;
   cursor: pointer;
-  color: #586a92;
+  color: #965940;
   font-family: Nunito;
   font-size: 20px;
   font-weight: 700;
@@ -10271,7 +10271,7 @@ a:hover {
   font-size: 18px;
 }
 .heading_cur3 {
-  color: #636262;
+  color: #0c0c0c;
   font-size: 17px;
   margin-bottom: 5px;
 }
@@ -10284,13 +10284,13 @@ a:hover {
   justify-content: center;
 }
 .heading_who {
-  color: #5c667f;
+  color: #965940;
   font-size: 22px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 .text_who {
-  color: #707070;
+  color: #0c0c0c;
   font-size: 16px;
 }
 .white_block.who .row {
@@ -10301,7 +10301,7 @@ a:hover {
   border-radius: 10px;
 }
 .aboput_text {
-  color: #707070;
+  color: #0c0c0c;
   font-size: 16px;
   line-height: 33px;
 }
@@ -10388,7 +10388,7 @@ a:hover {
   padding-left: 20px;
 }
 .people_block .name_star {
-  color: #566890;
+  color: #965940;
   font-size: 17px;
   font-family: Nunito;
   font-weight: 700;
@@ -10397,18 +10397,18 @@ a:hover {
   margin-right: 5px;
 }
 .people_block .name {
-  color: #566890;
+  color: #965940;
   font-size: 21px;
   font-family: Nunito;
   font-weight: 700;
 }
 .people_block .place {
-  color: #707070;
+  color: #0c0c0c;
   font-size: 16px;
   font-family: Nunito;
 }
 .people .detail {
-  color: #57575b;
+  color: #0c0c0c;
   font-size: 16px;
   font-family: Nunito;
   margin-bottom: 30px;
@@ -10465,7 +10465,7 @@ a:hover {
   color: #b79d74;
 }
 .star_rank .vote {
-  color: #57575b;
+  color: #0c0c0c;
   font-size: 15px;
   font-family: Nunito;
   margin-bottom: 30px;
@@ -10497,14 +10497,14 @@ a:hover {
 }
 .progress_bar_content .digit {
   position: absolute;
-  color: #57575b;
+  color: #0c0c0c;
   font-size: 15px;
   font-family: Nunito;
   top: -10px;
 }
 .progress_bar_content .percent {
   position: absolute;
-  color: #57575b;
+  color: #0c0c0c;
   font-size: 15px;
   font-family: Nunito;
   right: 25px;
@@ -10533,19 +10533,19 @@ a:hover {
   margin: 20px auto 0;
 }
 .review_name {
-  color: #566890;
+  color: #965940;
   font-size: 21px;
   font-family: Nunito;
   font-weight: 700;
 }
 .review_location {
-  color: #57575b;
+  color: #0c0c0c;
   font-size: 16px;
   font-family: Nunito;
   margin-bottom: 10px;
 }
 .review_detail {
-  color: #57575b;
+  color: #0c0c0c;
   font-size: 16px;
   font-family: Nunito;
   margin-top: 30px;
@@ -10596,7 +10596,7 @@ a:hover {
   padding-top: 10px;
 }
 .testimonial_video .video_location {
-  color: #586a92;
+  color: #965940;
   font-size: 15px;
   font-family: Nunito;
   padding-bottom: 20px;
@@ -10666,13 +10666,13 @@ a:hover {
   margin-bottom: 12px;
 }
 .right_block .date-and-time {
-  color: #617298;
+  color: #0c0c0c;
   font-size: 11px;
   display: block;
   margin-bottom: 7px;
 }
 .right_block .gray {
-  color: #717173 !important;
+  color: #0c0c0c !important;
 }
 .right_block .date-and-time img {
   width: 20px;
@@ -10846,7 +10846,7 @@ a:hover {
     margin-right: 5px;
   }
   .register_mobile .date-and-time {
-    color: #617298;
+    color: #0c0c0c;
     font-size: 11px;
     display: block;
     margin-bottom: 10px;

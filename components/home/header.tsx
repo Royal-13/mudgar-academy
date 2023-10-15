@@ -14,10 +14,10 @@ function Header({session}: Props) {
           <a href="/">
             <img
               loading="lazy"
-              src="/img/mudgarclub_logo.jpg"
+              src="/img/mudgaracademylogo.png"
               alt="Logo"
-              width="70px"
-              height="70px"
+              width="200px"
+              height="50px"
             />
           </a>
         </h1>
@@ -26,11 +26,21 @@ function Header({session}: Props) {
             <li>
               <a
                 className="nav-link scrollto menu-btn"
-                data-menu="benefit"
+                data-menu="course"
                 href="/courses"
                 target=""
               >
                 Courses
+              </a>
+            </li>
+            <li>
+              <a
+                className="nav-link scrollto menu-btn"
+                data-menu="shop"
+                href="https://mudgarclub.com/"
+                target=""
+              >
+                Our Shop
               </a>
             </li>
             <li>

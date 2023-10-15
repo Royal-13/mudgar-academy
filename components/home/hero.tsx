@@ -26,11 +26,11 @@ function Hero({}: Props) {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 pt-4">
-              <h1 id="title">Movement<br/>
+              <h1 id="title">Movement
                 With Mudgar</h1>
               <h2>Basic to intermediate 3 months Mudgar Swings</h2>
               <div>
-                <a href="#register_form" id="register_now_btn" className="btn-get-started scrollto register-now-track-btn" data-btn="main-cta">Register Now</a>
+                <a href="#register_form" id="register_now_btn" className="btn-get-started scrollto register-now-track-btn" data-btn="main-cta">Register Now<img loading="lazy" className="btn_arrow" id="right_register_arrow" src="/img/btn-arrow.png" alt="Arrow" width="20px" height="14px" style={{ display: 'none' }} /></a>
               </div>
               <div className="people_joined"><span id="user_count">
                   408 </span> people have already joined</div>

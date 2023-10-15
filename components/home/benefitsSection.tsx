@@ -5,7 +5,7 @@ type Props = {}
 function BenefitsSection({ }: Props) {
     return (
                     <div id="benefits" className=" text-center">
-                        <h3 className="brown_heading py-3">BENEFITS YOU GET <span className="gray">by taking this challenge</span></h3>
+                        <h3 className="brown_heading py-3">BENEFITS YOU GET <span className="gray">by swinging mudgar</span></h3>
                         <div className="benefits_block">
                             <div className="row">
                                 <div className="col-lg-4 col-6">

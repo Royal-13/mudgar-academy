@@ -219,13 +219,13 @@ function Testimonial({}: Props) {
                   width={20}
                   height={19}
                 />
-                <img
+                {/* <img
                   loading="lazy"
                   src="/img/star.png"
                   alt="Star"
                   width={20}
                   height={19}
-                />
+                /> */}
               </div>
               <div className="name">Sanjay Mehta </div>
               <div className="place">25, Dehradun</div>
@@ -328,13 +328,13 @@ function Testimonial({}: Props) {
                   width={20}
                   height={19}
                 />
-                <img
+                {/* <img
                   loading="lazy"
                   src="/img/star.png"
                   alt="Star"
                   width={20}
                   height={19}
-                />
+                /> */}
               </div>
               <div className="name">Rajiv Kapoor</div>
               <div className="place">42, Delhi</div>

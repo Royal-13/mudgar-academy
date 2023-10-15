@@ -80,19 +80,33 @@ function RegisterForm({ }: Props) {
             <input type="text" className="form-control" placeholder="State*" name="state" required id="state" />
             <div id="state_error" />
           </div>
+          <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0 city_div">
+            
+            <select name="time_slot" id="time_slot-1" className="custom-select">
+                <option value="">Choose your time slot*</option>
+                <option data-workshop_date="Monday, 13 November 2023" value={251} data-timeslot="6 PM (IST)">6 PM (IST)</option>
+                <option data-workshop_date="Monday, 13 November 2023" value={252} data-timeslot="7 PM (IST)">7 PM (IST)</option>
+                </select>
+            <div id="state_error" />
+          </div>
         </div>
+        
             <div className="row ">
               <div className="col-sm-12 col-lg-6 mb-4 mb-sm-3 mb-md-3 w-100 d-flex" id="time_slot_div">
-                <span className="custom-autocomplete date-and-time time-slot" style={{width: '65px!important'}}><img loading="lazy" src="/img/time-white.png" alt="Date" /></span>
+                <span className="custom-autocomplete date-and-time time-slot"><img loading="lazy" src="/img/time-white.png" alt="Date" /></span>
                 <select name="time_slot" id="time_slot" className="custom-select">
                   <option value="">Choose your time slot*</option>
-                  <option data-workshop_date="Monday, 13 November 2023" value={250} data-timeslot="4th Sep - 24th Sep  Date 6 - 7 AM (IST) or 8 - 9 AM (IST) ">4th Sep - 24th Sep  6 - 7 AM (IST) or 8 - 9 AM (IST) </option>
-                  <option data-workshop_date="Monday, 13 November 2023" value={251} data-timeslot="4th Sep - 24th Sep  8 - 9 AM (IST)">4th Sep - 24th Sep  6 - 7 AM (IST) or 8 - 9 AM (IST)</option>
-                  <option data-workshop_date="Monday, 13 November 2023" value={252} data-timeslot="4th Sep - 24th Sep  4 - 5 PM (IST)">4th Sep - 24th Sep  6 - 7 AM (IST) or 8 - 9 AM (IST)</option>
+                  <option data-workshop_date="Monday, 13 November 2023" value={250} data-timeslot="6 AM (IST)">6 AM (IST)</option>
+                  <option data-workshop_date="Monday, 13 November 2023" value={251} data-timeslot="7 AM (IST)">7 AM (IST)</option>
+                  <option data-workshop_date="Monday, 13 November 2023" value={252} data-timeslot="10 AM (IST)">10 AM (IST)</option>
+                  <option data-workshop_date="Monday, 13 November 2023" value={251} data-timeslot="6 PM (IST)">6 PM (IST)</option>
+                  <option data-workshop_date="Monday, 13 November 2023" value={252} data-timeslot="7 PM (IST)">7 PM (IST)</option>
                 </select>
                 <div id="time_slot_error" />
               </div>
             </div>
+
+
             <div className="row">
               <div className="col-sm-12 col-lg-12 mb-3 mb-sm-0">
                 <label className="d-none">Referral Code</label>
