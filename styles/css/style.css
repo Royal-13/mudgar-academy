@@ -1279,6 +1279,26 @@ input.loading {
   padding: 3px;
 }
 
+/* @media (max-width: 768px) {
+  .a.nav-link.scrollto.register-now{
+    color: #965940 !important;
+    background: #fff;
+  }
+  .navbar a.register-now{
+    background: #fff;
+    padding: 10px 40px;
+    border-radius: 50px;
+    margin-left: 20px;
+    color: #fd9f1a;
+    display: inline-block;
+    transition: 0.1s all ease-in-out;
+  }
+  .navbar a{
+    font-size: 17px;
+    font-weight: 400
+  }
+} */
+
 /* .select-arrow-1 {
   position: absolute;
   top: 50%;

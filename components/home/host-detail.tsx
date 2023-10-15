@@ -1,276 +1,87 @@
 import React from "react";
 import styles from "./host-details.module.css";
+import content from "../../config/host-details.json";
+
 type Props = {};
+
 function HostDetail({}: Props) {
   return (
     <div className={styles.fullwidth}>
-      <div className="coach-container">
-        <div className="profile">
-          <div className="profile-cover header-cover-container">
-            <div className="overlay">
-              <div className="header-content-container" data-page-cover-padding>
-                <div className="header-content">
-                  <div className="profile-name-container">
-                    <h1 className="profile-name">Anjit Suhag</h1>
-                    <ul className="social">
-                      <li className="facebook">
-                        <a className="social-icon" target="_blank" href="">
+      <div className={styles["coach-container"]}>
+        <div className={styles.profile}>
+          <div
+            className={`${styles.profilecover} ${styles.headercovercontainer}`}
+          >
+            <div className={styles["overlay"]}>
+              <div className={styles["header-content-container"]}>
+                <div className={styles["header-content"]}>
+                  <div className={styles["profile-name-container"]}>
+                    <h1 className={styles["profile-name"]}>{content.name}</h1>
+                    <ul className={styles["social"]}>
+                      <li className={styles["facebook"]}>
+                        <a
+                          className={styles["social-icon"]}
+                          target="_blank"
+                          href=""
+                        >
                           <svg
-                            className="codicon codicon-facebook"
+                            className={styles["codicon-facebook"]}
                             viewBox="0 0 22 40"
                             version="1.1"
                             xmlns="http://www.w3.org/2000/svg"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
-                          >
-                            <g
-                              id="Symbols"
-                              stroke="none"
-                              strokeWidth={1}
-                              fill="none"
-                              fillRule="evenodd"
-                            >
-                              <g
-                                id="Facebook-Copy"
-                                fill="#fff"
-                                fillRule="nonzero"
-                              >
-                                <g
-                                  id="Group-4-Copy"
-                                  transform="translate(0.100458, 0.161569)"
-                                >
-                                  <g id="Group-3">
-                                    <path
-                                      d="M12.236,36.6626 L12.236,20.6606 L18.4101296,20.6606 L18.6267676,16.1126 L12.236,16.1126 L12.236,10.6706 C12.236,8.38588464 13.105736,7.3726 15.394,7.3726 C16.1822368,7.3726 17.1245207,7.37648545 18.1492286,7.38313155 C18.2711812,7.38392252 18.3904595,7.38472566 18.5068623,7.38553649 L18.610562,3.17778233 C18.4630098,3.16433087 18.3098972,3.15102516 18.1521379,3.13805983 C17.0963971,3.0512946 16.0713066,3.0006 15.146,3.0006 C9.98098257,3.0006 7.346,5.91538385 7.346,9.9366 L7.346,16.1106 L3,16.1106 L3,20.6606 L7.346,20.6606 L7.346,36.6626 L12.236,36.6626 Z M19.8945533,3.31334018 C19.8866433,3.31236548 19.8786774,3.31138744 19.8706563,3.31040615 C19.8784389,3.31157754 19.886484,3.31249334 19.8945533,3.31334018 Z M18.6436978,1.83325228 C18.6426637,1.85496924 18.6421331,1.87662922 18.6420967,1.89821857 L18.6436978,1.83325228 Z M15.236,23.6606 L15.236,38.0826 C15.236,38.9601429 14.5214316,39.6626 13.656,39.6626 L5.926,39.6626 C5.0463671,39.6626 4.346,38.9499458 4.346,38.0826 L4.346,23.6606 L1.58,23.6606 C0.695132976,23.6606 0,22.9410764 0,22.0806 L0,14.6886 C0,13.8171729 0.706572875,13.1106 1.58,13.1106 L4.346,13.1106 L4.346,9.9366 C4.346,4.32227567 8.25282144,0.0006 15.146,0.0006 C16.163172,0.0006 17.2666127,0.0551693091 18.3978621,0.148140168 C19.1396883,0.209106574 19.7865042,0.277336099 20.2350272,0.332841821 C21.0844375,0.42225343 21.6791934,1.15923355 21.6415468,1.94147055 L21.4704528,8.88671149 C21.4324336,9.72313494 20.7469423,10.3966 19.878487,10.3965391 C19.3906673,10.3921444 18.8008427,10.3874209 18.1297714,10.3830685 C17.1109969,10.3764608 16.1746825,10.3726 15.394,10.3726 C15.3384607,10.3726 15.2872079,10.373237 15.2401851,10.3744169 C15.2374281,10.4590805 15.236,10.5573018 15.236,10.6706 L15.236,13.1126 L20.114,13.1126 C20.9948108,13.1126 21.7345722,13.8400321 21.6943013,14.765967 L21.3423022,22.1559477 C21.3024209,22.9934558 20.6110169,23.6606 19.766,23.6606 L15.236,23.6606 Z M15.2636941,10.0502534 C15.2659392,10.0453203 15.266999,10.0425094 15.2670776,10.0420596 C15.2670056,10.0424716 15.2658778,10.0452029 15.2636941,10.0502534 Z"
-                                      id="Stroke-9"
-                                    />
-                                  </g>
-                                </g>
-                              </g>
-                            </g>
-                          </svg>
+                          ></svg>
                           <svg
-                            className="codicon codicon-fb-white"
+                            className={styles["codicon-fb-white"]}
                             viewBox="0 0 22 40"
                             version="1.1"
                             xmlns="http://www.w3.org/2000/svg"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
-                          >
-                            <g
-                              id="Facebook/White"
-                              stroke="none"
-                              strokeWidth={1}
-                              fill="none"
-                              fillRule="evenodd"
-                            >
-                              <path
-                                d="M13.3364578,21.8221695 L13.3364578,37.8241695 L12.3364578,37.8241695 L7.44645784,37.8241695 L6.44645784,37.8241695 L6.44645784,21.8221695 L2.10045784,21.8221695 L2.10045784,15.2721695 L6.44645784,15.2721695 L6.44645784,10.0981695 C6.44645784,5.29771622 9.76795752,2.1621695 15.2464578,2.1621695 C16.1706875,2.1621695 17.2129745,2.21081743 18.3345038,2.30298944 C18.4920523,2.31593744 18.6480688,2.32946611 18.8018074,2.34348155 L19.7337727,2.42844333 L19.5828108,8.5539252 L18.6003546,8.54708172 C18.4245512,8.54587097 18.4245512,8.54587097 18.2432007,8.54468001 C17.1796326,8.53778187 16.2531707,8.5341695 15.4944578,8.5341695 C13.8127084,8.5341695 13.3364578,9.04394758 13.3364578,10.8321695 L13.3364578,15.2741695 L19.7759929,15.2741695 L19.4640876,21.8221695 L13.3364578,21.8221695 Z"
-                                id="Path-Copy"
-                                fill="#FFFFFF"
-                                fillRule="nonzero"
-                              />
-                            </g>
-                          </svg>
+                          ></svg>
                         </a>
                       </li>
-                      <li className="instagram">
-                        <a className="social-icon" target="_blank" href="">
-                          {/*?xml version="1.0" encoding="UTF-8"?*/}
+                      <li className={styles["instagram"]}>
+                        <a
+                          className={styles["social-icon"]}
+                          target="_blank"
+                          href=""
+                        >
                           <svg
-                            className="codicon codicon-instagram"
+                            className={styles["codicon-instagram"]}
                             viewBox="0 0 40 40"
                             version="1.1"
                             xmlns="http://www.w3.org/2000/svg"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
-                          >
-                            <title>Instagram</title>
-                            <defs />
-                            <g id="Symbols">
-                              <g id="Instagram">
-                                <g
-                                  id="Group-4-Copy"
-                                  transform="translate(-70.000000, 1.191725)"
-                                >
-                                  <g id="Group-3">
-                                    <path
-                                      d="M100.4138,9.558 C99.7518,9.558 99.2118,9.02 99.2118,8.356 C99.2118,7.694 99.7518,7.156 100.4138,7.156 C101.0778,7.156 101.6158,7.694 101.6158,8.356 C101.6158,9.02 101.0778,9.558 100.4138,9.558 Z M89.9398,26.952 C85.4558,26.952 81.8198,23.316 81.8198,18.832 C81.8198,14.348 85.4558,10.712 89.9398,10.712 C94.4238,10.712 98.0598,14.348 98.0598,18.832 C98.0598,23.316 94.4238,26.952 89.9398,26.952 Z M108.1598,11.274 C108.0718,9.322 107.7618,7.99 107.3078,6.824 C106.8398,5.618 106.2118,4.596 105.1958,3.578 C104.1758,2.558 103.1518,1.932 101.9478,1.464 C100.7818,1.01 99.4498,0.7 97.4978,0.61 C95.5418,0.522 94.9178,0.5 89.9398,0.5 C84.9598,0.5 84.3378,0.522 82.3818,0.61 C80.4318,0.7 79.0978,1.01 77.9318,1.464 C76.7258,1.932 75.7058,2.558 74.6858,3.578 C73.6658,4.596 73.0378,5.618 72.5718,6.824 C72.1198,7.99 71.8078,9.322 71.7178,11.274 C71.6298,13.228 71.6098,13.852 71.6098,18.832 C71.6098,23.81 71.6298,24.434 71.7178,26.39 C71.8078,28.34 72.1198,29.674 72.5718,30.84 C73.0378,32.044 73.6658,33.066 74.6858,34.086 C75.7058,35.104 76.7258,35.732 77.9318,36.2 C79.0978,36.654 80.4318,36.964 82.3818,37.052 C84.3378,37.142 84.9598,37.162 89.9398,37.162 C94.9178,37.162 95.5418,37.142 97.4978,37.052 C99.4498,36.964 100.7818,36.654 101.9478,36.2 C103.1518,35.732 104.1758,35.104 105.1958,34.086 C106.2118,33.066 106.8398,32.044 107.3078,30.84 C107.7618,29.674 108.0718,28.34 108.1598,26.39 C108.2498,24.434 108.2718,23.81 108.2718,18.832 C108.2718,13.852 108.2498,13.228 108.1598,11.274 Z"
-                                      id="Stroke-1"
-                                    />
-                                  </g>
-                                </g>
-                              </g>
-                            </g>
-                          </svg>
-                          {/*?xml version="1.0" encoding="UTF-8"?*/}
+                          ></svg>
                           <svg
-                            className="codicon codicon-ig-white"
+                            className={styles["codicon-ig-white"]}
                             viewBox="0 0 40 40"
                             version="1.1"
                             xmlns="http://www.w3.org/2000/svg"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
-                          >
-                            <defs />
-                            <g
-                              id="Instagram/White"
-                              stroke="none"
-                              strokeWidth={1}
-                              fill="none"
-                              fillRule="evenodd"
-                            >
-                              <g
-                                id="Group-4-Copy"
-                                transform="translate(-70.000000, 1.191725)"
-                                fill="#FFFFFF"
-                                fillRule="nonzero"
-                              >
-                                <g id="Group-3">
-                                  <path
-                                    d="M100.4138,8.058 C100.249373,8.058 100.1158,8.19157288 100.1158,8.356 C100.1158,8.52250436 100.249449,8.656 100.4138,8.656 C100.579075,8.656 100.7118,8.52358005 100.7118,8.356 C100.7118,8.19049688 100.579151,8.058 100.4138,8.058 Z M100.4138,11.058 C98.9230676,11.058 97.7118,9.8481231 97.7118,8.356 C97.7118,6.86518 98.9237629,5.656 100.4138,5.656 C101.905532,5.656 103.1158,6.86487725 103.1158,8.356 C103.1158,9.84842712 101.906227,11.058 100.4138,11.058 Z M89.9398,25.452 C93.5953729,25.452 96.5598,22.4875729 96.5598,18.832 C96.5598,15.1764271 93.5953729,12.212 89.9398,12.212 C86.2842271,12.212 83.3198,15.1764271 83.3198,18.832 C83.3198,22.4875729 86.2842271,25.452 89.9398,25.452 Z M89.9398,28.452 C84.6273729,28.452 80.3198,24.1444271 80.3198,18.832 C80.3198,13.5195729 84.6273729,9.212 89.9398,9.212 C95.2522271,9.212 99.5598,13.5195729 99.5598,18.832 C99.5598,24.1444271 95.2522271,28.452 89.9398,28.452 Z M107.994264,10.7461142 C107.913505,8.95476001 107.654281,7.66488779 107.182332,6.45278684 C106.73376,5.29685089 106.15878,4.40122461 105.266636,3.50732337 C104.373663,2.61435029 103.478341,2.04010356 102.317301,1.58880196 C101.107596,1.11778469 99.8169938,0.857967889 98.0274127,0.775455461 C95.7206729,0.671675756 94.8930318,0.658323442 89.9397203,0.658323442 C84.9851493,0.658323442 84.1593589,0.671649154 81.8539073,0.775369812 C80.0636453,0.857997286 78.7708839,1.11815881 77.5604274,1.58946752 C76.4027558,2.03871323 75.5104693,2.61181798 74.6138395,3.50844668 C73.7183322,4.40219809 73.1440781,5.2960407 72.6973166,6.45224921 C72.2256359,7.66901837 71.9653906,8.95953187 71.8830927,10.7444616 C71.7809076,13.0134356 71.7681234,13.8306211 71.7681234,18.8320797 C71.7681234,23.8314022 71.7809031,24.6483021 71.8830104,26.9178927 C71.9654196,28.7034256 72.2260137,29.9961156 72.6976253,31.2127072 C73.1439968,32.3659931 73.7187671,33.2606392 74.6138395,34.1557128 C75.5119169,35.0520292 76.4059924,35.6267022 77.5621396,36.0753575 C78.7715703,36.5462679 80.0636038,36.8058362 81.8536787,36.8866197 C84.1173664,36.9907771 84.9290422,37.0036766 89.9397203,37.0036766 C94.9491524,37.0036766 95.7626267,36.9907516 98.0272639,36.8865512 C99.81704,36.8058646 101.106912,36.5466409 102.318168,36.0750203 C103.475084,35.6253221 104.372236,35.0494812 105.264388,34.1590882 C106.158346,33.2616113 106.733841,32.3651822 107.182998,31.2096604 C107.653908,30.0002297 107.913477,28.7081962 107.99426,26.9181213 C108.099967,24.6207568 108.113477,23.7958782 108.113477,18.8320797 C108.113477,13.8661447 108.099962,13.0409363 107.994264,10.7461142 Z"
-                                    id="Stroke-1"
-                                  />
-                                </g>
-                              </g>
-                            </g>
-                          </svg>
+                          ></svg>
                         </a>
                       </li>
-                      <li className="coach-web">
-                        <a className="social-icon" target="_blank" href="">
-                          {/*?xml version="1.0" encoding="UTF-8"?*/}
+                      <li className={styles["coach-web"]}>
+                        <a
+                          className={styles["social-icon"]}
+                          target="_blank"
+                          href=""
+                        >
                           <svg
-                            className="codicon globe-codicon"
+                            className={styles["globe-codicon"]}
                             viewBox="0 0 39 39"
                             version="1.1"
                             xmlns="http://www.w3.org/2000/svg"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
-                          >
-                            <defs />
-                            <g
-                              id="Page-1"
-                              strokeWidth={1}
-                              fill="none"
-                              fillRule="evenodd"
-                            >
-                              <g
-                                id="Group-Copy"
-                                transform="translate(0.500000, 0.368054)"
-                                strokeWidth={3}
-                              >
-                                <g
-                                  id="Page-1"
-                                  transform="translate(0.054400, 0.771467)"
-                                >
-                                  <path
-                                    d="M36.11715,18.5391 C36.11715,28.2471 28.24715,36.1171 18.53915,36.1171 C8.83115,36.1171 0.96115,28.2471 0.96115,18.5391 C0.96115,8.8311 8.83115,0.9611 18.53915,0.9611 C28.24715,0.9611 36.11715,8.8311 36.11715,18.5391 Z"
-                                    id="Stroke-1"
-                                  />
-                                  <path
-                                    d="M0.96095,18.5391 L36.11695,18.5391"
-                                    id="Stroke-3"
-                                  />
-                                  <path
-                                    d="M24.77955,18.5391 C24.77955,28.2391 21.98555,36.1031 18.53955,36.1031 C15.09355,36.1031 12.29955,28.2391 12.29955,18.5391 C12.29955,8.8391 15.09355,0.9751 18.53955,0.9751 C21.98555,0.9751 24.77955,8.8391 24.77955,18.5391 Z"
-                                    id="Stroke-5"
-                                  />
-                                </g>
-                              </g>
-                            </g>
-                          </svg>
-                          {/*?xml version="1.0" encoding="UTF-8"?*/}
+                          ></svg>
                           <svg
-                            className="codicon codicon-globe-white"
+                            className={styles["codicon-globe-white"]}
                             viewBox="0 0 44 40"
                             version="1.1"
                             xmlns="http://www.w3.org/2000/svg"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
-                          >
-                            <defs>
-                              <polygon
-                                id="path-1"
-                                points="0.0002 0.844 19.0022 0.844 19.0022 18.4216 0.0002 18.4216"
-                              />
-                              <polygon
-                                id="path-3"
-                                points="0.0031 0.4216 19.004 0.4216 19.004 17.9996 0.0031 17.9996"
-                              />
-                              <polygon
-                                id="path-5"
-                                points="0.0031 0.844 19.004 0.844 19.004 18.4216 0.0031 18.4216"
-                              />
-                            </defs>
-                            <g
-                              id="Globe/White"
-                              stroke="none"
-                              strokeWidth={1}
-                              fill="none"
-                              fillRule="evenodd"
-                            >
-                              <g
-                                id="Group"
-                                transform="translate(2.000000, 0.000000)"
-                              >
-                                <g
-                                  id="Group-3"
-                                  transform="translate(0.922100, 0.000000)"
-                                >
-                                  <mask id="mask-2" fill="white">
-                                    <use xlinkHref="#path-1" />
-                                  </mask>
-                                  <g id="Clip-2" />
-                                  <path
-                                    d="M11.2892,18.4216 C11.5542,9.4556 14.1902,0.8436 19.0022,0.8436 C8.9892,0.8436 0.7702,8.6026 0.0002,18.4216 L11.2892,18.4216 Z"
-                                    id="Fill-1"
-                                    fill="#FFFFFF"
-                                    mask="url(#mask-2)"
-                                  />
-                                </g>
-                                <path
-                                  d="M12.2113,21.4216 L0.9223,21.4216 C1.6913,31.2406 9.9113,38.9996 19.9243,38.9996 C15.1123,38.9996 12.4763,30.3876 12.2113,21.4216"
-                                  id="Fill-4"
-                                  fill="#FFFFFF"
-                                />
-                                <path
-                                  d="M24.637,18.4216 C24.361,9.6026 21.712,3.8456 19.925,3.8456 C18.138,3.8456 15.488,9.6026 15.213,18.4216 L24.637,18.4216 Z"
-                                  id="Fill-6"
-                                  fill="#FFFFFF"
-                                />
-                                <path
-                                  d="M15.2125,21.4216 C15.4885,30.2406 18.1375,35.9976 19.9245,35.9976 C21.7125,35.9976 24.3615,30.2406 24.6365,21.4216 L15.2125,21.4216 Z"
-                                  id="Fill-8"
-                                  fill="#FFFFFF"
-                                />
-                                <g
-                                  id="Group-12"
-                                  transform="translate(19.922100, 21.000000)"
-                                >
-                                  <mask id="mask-4" fill="white">
-                                    <use xlinkHref="#path-3" />
-                                  </mask>
-                                  <g id="Clip-11" />
-                                  <path
-                                    d="M7.7161,0.4216 C7.4511,9.3876 4.8161,17.9996 0.0031,17.9996 C10.0161,17.9996 18.2351,10.2406 19.0041,0.4216 L7.7161,0.4216 Z"
-                                    id="Fill-10"
-                                    fill="#FFFFFF"
-                                    mask="url(#mask-4)"
-                                  />
-                                </g>
-                                <g
-                                  id="Group-15"
-                                  transform="translate(19.922100, 0.000000)"
-                                >
-                                  <mask id="mask-6" fill="white">
-                                    <use xlinkHref="#path-5" />
-                                  </mask>
-                                  <g id="Clip-14" />
-                                  <path
-                                    d="M7.7161,18.4216 L19.0041,18.4216 C18.2341,8.6026 10.0161,0.8446 0.0031,0.8436 C4.8161,0.8446 7.4511,9.4556 7.7161,18.4216"
-                                    id="Fill-13"
-                                    fill="#FFFFFF"
-                                    mask="url(#mask-6)"
-                                  />
-                                </g>
-                              </g>
-                            </g>
-                          </svg>
+                          ></svg>
                         </a>
                       </li>
                     </ul>
@@ -279,45 +90,43 @@ function HostDetail({}: Props) {
               </div>
             </div>
           </div>
-          <div className="profile-header">
-            <div className="profile-table">
-              <div className="profile-table-left">
-                <div className="profile-photo">
+          <div className={styles["profile-header"]}>
+            <div className={styles["profile-table"]}>
+              <div className={styles["profile-table-left"]}>
+                <div className={styles["profile-photo"]}>
                   <img
                     alt="Anjit"
-                    className="profile-photo-image img-circle"
-                    src="anjit.jpg"
+                    className={styles["profile-photo-image"]}
+                    src="/img/anjit.jpg"
                   />
                 </div>
               </div>
-              <div className="profile-table-right">
-                <div className="profile-bio-container">
+              <div className={styles["profile-table-right"]}>
+                <div className={styles["profile-bio-container"]}>
                   <div>
-                    <div className="profile-bio">
-                      <p>
-                        Anjit Suhag is an accomplished yoga instructor who has
-                        trained approximately 200,000 people in yoga over the
-                        course of 2-3 years. His fitness journey began in 2017
-                        as a runner, and his love for fitness has only grown
-                        since then.
-                      </p>
-                      <p>
-                        In 2020, Anjit discovered the practice of Mudgar and
-                        began to learn it. During his journey, he realized that
-                        there were issues with the way Mudgar was being taught.
-                        Many people were unaware of this ancient art, and those
-                        who were aware were charging exorbitant amounts for the
-                        practice and selling Mudgars at unaffordable prices.
-                      </p>
-                      <p>
-                        Anjit decided to start his own teaching journey, making
-                        the practice of Mudgar more accessible and affordable.
-                        He began to manufacture and sell premium quality Mudgars
-                        made of Mahaghani wood at a reasonable price. This gave
-                        Anjit a purpose to start his Har-Ghar Mudgar journey,
-                        where he aims to teach Mudgar to every household and
-                        spread this practice as far as possible.
-                      </p>
+                    <div className={styles["profile-bio"]}>
+                      {content.bio.map(
+                        (
+                          paragraph:
+                            | string
+                            | number
+                            | boolean
+                            | React.ReactElement<
+                                any,
+                                string | React.JSXElementConstructor<any>
+                              >
+                            | Iterable<React.ReactNode>
+                            | React.ReactPortal
+                            | React.PromiseLikeOfReactNode
+                            | null
+                            | undefined,
+                          index: React.Key | null | undefined
+                        ) => (
+                          <p key={index} className="pad-1">
+                            {paragraph}
+                          </p>
+                        )
+                      )}
                     </div>
                   </div>
                 </div>

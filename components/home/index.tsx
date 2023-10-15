@@ -12,6 +12,7 @@ import Float from "./float"
 import Footer from "./footer"
 import Testimonial from "./testimonials"
 import { type } from "os"
+import Footer1 from "./footer1"
 
 
 type Props = {
@@ -51,7 +52,7 @@ export default function HomePage({session}: Props) {
 
         </section>
       </main>
-      <Footer />
+      <Footer1/>
     </>
   )
 }
