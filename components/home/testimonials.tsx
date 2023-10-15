@@ -173,7 +173,7 @@ function Testimonial({}: Props) {
                 />
               </div>
               <div className="name">Kavita Reddy</div>
-              <div className="place">27, Dehradun</div>
+              <div className="place">27, West Bengal</div>
             </div>
             <div className="detail show-read-more">
               As a busy professional, I had neglected my health. But thanks to
@@ -228,7 +228,7 @@ function Testimonial({}: Props) {
                 /> */}
               </div>
               <div className="name">Sanjay Mehta </div>
-              <div className="place">25, Dehradun</div>
+              <div className="place">25, Noida</div>
             </div>
             <div className="detail show-read-more">
               My journey with 'Movement with Mudgar' under the mentorship of
@@ -274,16 +274,16 @@ function Testimonial({}: Props) {
                   width={20}
                   height={19}
                 />
-                <img
+                {/* <img
                   loading="lazy"
                   src="/img/star.png"
                   alt="Star"
                   width={20}
                   height={19}
-                />
+                /> */}
               </div>
               <div className="name">Radhika Sharma</div>
-              <div className="place">22, Dehradun</div>
+              <div className="place">22, Mumbai</div>
             </div>
             <div className="detail show-read-more">
               I've always been skeptical about online fitness programs, but
