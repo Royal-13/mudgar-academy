@@ -66,11 +66,11 @@ function Footer1({}: Props) {
       </ul>
       <div className={styles1.legal}>
         <p>© 2023 . All rights reserved.</p>
-        <div className={styles1['legal__links']}>
+        {/* <div className={styles1['legal__links']}>
           <span>
             Made with <span className={styles1.heart}>♥</span> by Czar
           </span>
-        </div>
+        </div> */}
       </div>
     </footer>
     </div>
