@@ -22,14 +22,14 @@ function SectionOne({ }: Props) {
       <div className="col-lg-9">
         <div className="grid gtc-lg-4 gtc-md-2 gtc gtc-sm-1 date_time_block">
           <div className="item date_time">
-            <img loading="lazy" src="/img/box/start_date.png" alt="Appointment" />
+            <img loading="lazy" src="/img/box/start.png" alt="Appointment" />
             <div className="stdate">Start Date</div>
             <div className="fulldate" id="workshop_date">
               4th Sep, 2023 <br />
             </div>
           </div>
           <div className="item date_time">
-            <img loading="lazy" src="/img/box/time.png" alt="Time" />
+            <img loading="lazy" src="/img/box/timings.png" alt="Time" />
             <div className="stdate">Timings</div>
             <div className="fulldate">
               <div className="custom-select">
@@ -60,12 +60,12 @@ function SectionOne({ }: Props) {
             </div>
           </div>
           <div className="item date_time">
-            <img loading="lazy" src="/img/box/language.png" alt="Global" />
+            <img loading="lazy" src="/img/box/languages.png" alt="Global" />
             <div className="stdate">Language</div>
             <div className="fulldate">English</div>
           </div>
           <div className="item date_time duaration_time">
-            <img loading="lazy" src="/img/box/Duration.png" alt="Duration" />
+            <img loading="lazy" src="/img/box/Duration1.png" alt="Duration" />
             <div className="stdate">Duration</div>
             <div className="fulldate">
               3 months / 12 Weeks <br />
