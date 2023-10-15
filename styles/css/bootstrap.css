@@ -398,6 +398,7 @@ output {
 }
 iframe {
   border: 0;
+  border-radius: 30px;
 }
 summary {
   display: list-item;
