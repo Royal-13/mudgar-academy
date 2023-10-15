@@ -87,7 +87,7 @@ h6 {
 h1 {
   font-size: calc(1.375rem+1.5vw);
 }
-.register_desktop{
+.register_desktop {
   margin-left: 2rem;
   display: block;
 }
@@ -398,6 +398,7 @@ output {
 }
 iframe {
   border: 0;
+  border-radius: 30px;
 }
 summary {
   display: list-item;
@@ -600,7 +601,7 @@ progress {
   padding-left: calc(var(--bs-gutter-x) / 2);
   margin-top: var(--bs-gutter-y);
 }
-#pad-1{
+#pad-1 {
   padding-right: calc(var(--bs-gutter-x) * 1.5);
   padding-left: calc(var(--bs-gutter-x) * 1.5);
 }
@@ -1178,11 +1179,11 @@ progress {
     flex: 0 0 auto;
     width: 75%;
   }
-  .cols-margin{
+  .cols-margin {
     margin-top: 70px;
   }
-  .cols-margin-both{
-    margin:100px;
+  .cols-margin-both {
+    margin: 100px;
   }
   .col-lg-10 {
     flex: 0 0 auto;
@@ -9567,7 +9568,6 @@ a:hover {
   font-weight: 400;
 }
 #margin-top-nav {
-
 }
 #footer {
   box-shadow: 0 -5px 8px #f3f3f3;
@@ -9584,6 +9584,18 @@ a:hover {
 }
 .navbar li {
   position: relative;
+}
+.navbar button{
+  display: flex;
+  align-items: center;
+  color: brown !important;
+  font-size: 20px !important;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: 0.3s;
+  border: none;
 }
 .navbar a,
 .navbar a:focus {
@@ -10377,11 +10389,12 @@ a:hover {
   margin-bottom: 30px;
 }
 .contribution {
-  color: #fff;
+  color: white;
   font-size: 17px;
   font-family: Nunito;
   font-weight: 700;
   margin-top: 30px;
+  animation: blink 2s linear infinite;
 }
 .people .person {
   width: 100px;
@@ -10671,6 +10684,12 @@ a:hover {
   font-family: Nunito;
   margin-bottom: 12px;
 }
+.offer {
+  color: red !important;
+  font-weight: 700;
+  font-size: 15px !important;
+  animation: blink 2s linear infinite;
+}
 .right_block .date-and-time {
   color: #0c0c0c;
   font-size: 11px;
@@ -10731,6 +10750,17 @@ a:hover {
   background: #e8efff;
   padding: 5px;
   top: -4px;
+}
+@keyframes blink {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (max-width: 1920px) {
   .register_desktop {
@@ -13204,5 +13234,3 @@ a.ui-button:active,
   -webkit-box-shadow: 0 0 5px #666;
   box-shadow: 0 0 5px #666;
 }
-
-
