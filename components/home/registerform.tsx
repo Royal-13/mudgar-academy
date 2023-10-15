@@ -489,7 +489,7 @@ function RegisterForm({}: Props) {
             />
           </button>
           <div className="contribution mobile_display_none">
-            Contribution: ₹ 0
+            Today's Offer: ₹<s>6000</s> 4700
           </div>
         </form>
       </div>

@@ -1,5 +1,7 @@
+import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 type Props = {
@@ -7,6 +9,14 @@ type Props = {
 };
 
 function Header({session}: Props) {
+  const router = useRouter();
+  const supabaseClient = useSupabaseClient();
+  const logout = async () => {
+    const { error } = await supabaseClient.auth.signOut();
+    if (!error) {
+      location.reload();
+    }
+  }
   return (
     <header id="header" className="fixed-top">
       <div className="container d-flex align-items-center justify-content-between my-1 px-4">
@@ -72,35 +82,25 @@ function Header({session}: Props) {
             </li>
             {session ? (
               <li>
-              <a
+              <button
                 className="nav-link scrollto menu-btn"
                 data-menu="login"
-                href="/login"
+                onClick={logout}
               >
                 Logout
-              </a>
+              </button>
             </li>
             ):(
               <li>
-              <a
+              <button
                 className="nav-link scrollto menu-btn"
                 data-menu="login"
-                href="/login"
+                onClick={() => {router.push("/login")}}
               >
                 Login
-              </a>
+              </button>
             </li>
             )}
-            <li>
-              {" "}
-              <a
-                className="nav-link scrollto register-now register-now-track-btn"
-                data-btn="top-bar"
-                href="/#register_form"
-              >
-                Get Started
-              </a>
-            </li>
           </ul>
         </nav>
       </div>
