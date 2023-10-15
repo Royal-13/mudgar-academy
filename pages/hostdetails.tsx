@@ -22,7 +22,7 @@ const  detailshost= () => {
       });
     return (
         <>
-        <HostDetail session={isUserLoggedIn}/>
+        {/* <HostDetail session={isUserLoggedIn}/> */}
         </>
         );
 };
