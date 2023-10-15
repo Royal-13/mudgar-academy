@@ -13,6 +13,7 @@ import Footer from "./footer"
 import Testimonial from "./testimonials"
 import { type } from "os"
 import Footer1 from "./footer1"
+import CountdownMobile from "./countdown_mobile"
 
 
 type Props = {

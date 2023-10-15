@@ -20,7 +20,7 @@
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
     color: #0c0c0c;
-    background-color: #fff;
+    background-color: #f2efea;
     border-top: 1px solid #e5e5e5;
   }
   
@@ -48,8 +48,9 @@
   }
   
   .nav__title {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 15px;
+    
   }
   
   .footer address.footer-address {

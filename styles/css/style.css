@@ -596,7 +596,7 @@ div.learn_side {
   #header .logo img {
     max-height: unset !important;
     height: auto !important;
-    margin-top: 2px !important;
+    margin-top: 10px !important;
   }
   .grid {
     row-gap: 12px !important;
@@ -1272,14 +1272,22 @@ input.loading {
   background-color: #f0f0f0;
 }
 
-/* Additional styling for the selected item */
 .select .selected {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 3px;
 }
 
-/* @media (max-width: 768px) {
+.brown_heading_1{
+  font-size: 25px;
+  color: #965940;
+}
+
+.countdown_mobile {
+  background: linear-gradient(to right, #965940 0, #16699f 100%) !important;
+}
+
+@media (max-width: 768px) {
   .a.nav-link.scrollto.register-now{
     color: #965940 !important;
     background: #fff;
@@ -1297,7 +1305,7 @@ input.loading {
     font-size: 17px;
     font-weight: 400
   }
-} */
+}
 
 /* .select-arrow-1 {
   position: absolute;

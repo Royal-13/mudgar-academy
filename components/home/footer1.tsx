@@ -22,7 +22,7 @@ function Footer1({}: Props) {
       </div>
       <ul className={styles1['footer__nav']}>
         <li className={styles1['nav__item']}>
-          <h2 className={styles1['nav__title']}>Quic links</h2>
+          <h2 className={styles1['nav__title']}>Quick links</h2>
           <ul className={styles1['nav__ul']}>
             <li>
               <a href="/">Home</a>

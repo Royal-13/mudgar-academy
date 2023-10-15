@@ -1,6 +1,5 @@
 import React from "react";
-import * as $ from 'jquery';
-import MyComponent from "./countdown";
+import Countdown from "./countdown";
 
 
 type Props = {};
@@ -44,7 +43,7 @@ function Hero({}: Props) {
                     <div className="block"><div className="counter_digit seconds" /><span>secs</span></div>
                   </div>
                 </div>
-                <MyComponent/>
+                <Countdown/>
               </div>
             </div>
             <div className="col-lg-6 pt-4 main_video pe-0 pe-sm-5 d-flex align-content-end" id="homepageimage">

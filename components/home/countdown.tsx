@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-function MyComponent() {
+function Countdown() {
   function getTimeRemaining(endtime: string) {
     const total = Date.parse(endtime) - Date.now();
     const seconds = Math.floor((total / 1000) % 60);
@@ -60,4 +60,4 @@ function MyComponent() {
   );
 }
 
-export default MyComponent;
+export default Countdown;
