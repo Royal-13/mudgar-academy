@@ -1315,6 +1315,12 @@ input.loading {
   color: red;
   font-weight: 700;
 }
+/* Add space to the bottom of the footer on mobile devices */
+@media (max-width: 767px) {
+  .mobilefooterspace {
+    margin-bottom: 20px;
+  }
+}
 
 /* .select-arrow-1 {
   position: absolute;

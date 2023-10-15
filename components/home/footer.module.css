@@ -23,6 +23,11 @@
     background-color: #f2efea;
     border-top: 1px solid #e5e5e5;
   }
+  @media (max-width: 767px) {
+    .footer {
+      margin-bottom: 100px;
+    }
+  }
   
   .footer > * {
     flex:  1 100%;
@@ -141,5 +146,11 @@
     
     .footer__nav {
       flex: 2 0px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .nav__ul {
+      margin-bottom: 10px;
     }
   }
