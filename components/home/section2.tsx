@@ -40,7 +40,7 @@ function SectionTwo({ }: Props) {
             <div>
               <img loading="lazy" className="rounded-whats-img" srcSet="/img/whats/tiny_v3/community.webp 480w,/img/whats/tiny_v3/community.webp 800w" sizes="(max-width: 600px) 480px, 800px" src="/img/whats/tiny_v3/community.webp" />
               <div className="include_details_bg">
-                <h4>Community of Thousands of People</h4>
+                <h4>COMMUNITY OF THOUSANDS OF PEOPLE</h4>
                 <div className="include_text">You will have the opportunity to connect and grow with like-minded people and become part of the biggest mudgar club possible for the next three months.</div>
               </div>
             </div>

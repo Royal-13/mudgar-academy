@@ -1,8 +1,10 @@
-import HostDetail from '@/components/home/try';
+import Footer1 from '@/components/home/footer1';
+import Header from '@/components/home/header';
+import HostDetail from '@/components/home/host-detail';
 import { useSupabaseClient } from '@supabase/auth-helpers-react';
 import React, { useState } from 'react';
 const  detailshost= () => {
-    const supabaseClient = useSupabaseClient();
+  const supabaseClient = useSupabaseClient();
     const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
   
   
@@ -22,7 +24,9 @@ const  detailshost= () => {
       });
     return (
         <>
-        {/* <HostDetail session={isUserLoggedIn}/> */}
+        <HostDetail session={isUserLoggedIn}/>
+        <HostDetail/>
+        <Footer1/>
         </>
         );
 };

@@ -600,6 +600,10 @@ progress {
   padding-left: calc(var(--bs-gutter-x) / 2);
   margin-top: var(--bs-gutter-y);
 }
+#pad-1{
+  padding-right: calc(var(--bs-gutter-x) * 1.5);
+  padding-left: calc(var(--bs-gutter-x) * 1.5);
+}
 .col {
   flex: 1 0 0;
 }
@@ -4042,8 +4046,10 @@ fieldset:disabled .btn {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0.52rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow here */
 }
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -10039,7 +10045,7 @@ a:hover {
 .include_details img {
   float: left;
   margin-right: 20px;
-  width: 175px;
+  width: 165px;
   margin-bottom: 20px;
 }
 .include_details h4 {
@@ -10298,7 +10304,7 @@ a:hover {
 }
 #about img {
   max-width: 100%;
-  border-radius: 10px;
+  border-top: 12px;
 }
 .aboput_text {
   color: #0c0c0c;
@@ -11360,12 +11366,12 @@ section {
   }
   .countdown_mobile {
     display: block;
-    margin-top: -120px;
-    margin-right: -5px;
-    margin-left: -5px;
+    margin-top: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
   .count_block_whiteblock {
-    margin-top: 130px;
+    margin-top: 50px;
     padding-bottom: 50px;
     border-radius: 0;
   }
