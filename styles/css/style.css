@@ -1311,6 +1311,11 @@ input.loading {
   }
 }
 
+#sale-time{
+  color: red;
+  font-weight: 700;
+}
+
 /* .select-arrow-1 {
   position: absolute;
   top: 50%;

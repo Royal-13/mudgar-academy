@@ -1,5 +1,6 @@
 import Float from "@/components/home/float";
 import Footer from "@/components/home/footer";
+import Footer1 from "@/components/home/footer1";
 import Header from "@/components/home/header";
 import RegisterForm from "@/components/home/registerform";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
@@ -146,7 +147,7 @@ quality Mahaghony Wood.
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer1 />
     </>
   );
 };

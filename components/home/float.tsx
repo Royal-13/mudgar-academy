@@ -54,6 +54,7 @@ const Float = () => {
               408 </strong> people have already joined</span>
         </div>
       </div>
+      {/* mobile view */}
       <div className="register_mobile">
         <div className="register_mobile_heading">
           <h3>Movement <br/>
@@ -62,7 +63,9 @@ const Float = () => {
           <a href="#register_form" className="btn-get-started scrollto right_register_text">Register</a>
         </div>
         <div className="register_mobile_detail">
-          <span className="date-and-time"><img loading="lazy" src="/img/rupee.png" alt="Rupee" />Price: Rs: 590</span>
+          <span className="date-and-time" id="sale-time"><img loading="lazy" src="/img/saletime.png" alt="Sale" />Limited Time Offer<br/>
+          <s>Old Price : 6000</s> New Price: 4700
+          </span>
           <span className="date-and-time register_count_mobile"><img loading="lazy" src="/img/group.png" alt="Group" width={100} height={100} /><span><strong>408</strong> registered</span></span>
         </div>
       </div>

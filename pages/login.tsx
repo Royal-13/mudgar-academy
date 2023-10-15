@@ -1,3 +1,4 @@
+import Footer1 from "@/components/home/footer1";
 import Header from "@/components/home/header";
 import { createServerSupabaseClient } from "@supabase/auth-helpers-nextjs";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
@@ -66,6 +67,7 @@ export default function Login({ }: Props) {
             </button>
           </form>
       </div>
+      <Footer1/>
     </>
   );
 };
