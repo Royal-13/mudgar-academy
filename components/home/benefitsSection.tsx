@@ -6,17 +6,19 @@ type Props = {};
 function BenefitsSection({}: Props) {
   return (
     <div id="benefits" className=" text-center">
-      <h3 className="brown_heading py-3">
+      <motion.h3
+        initial={{ y: -300, opacity: 0 }}
+        transition={{ duration: 1.2 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        className="brown_heading py-3"
+      >
         BENEFITS YOU GET <span className="gray">by swinging mudgar</span>
-      </h3>
+      </motion.h3>
       <div className="benefits_block">
         <div className="row">
           <div className="col-lg-4 col-6">
             <div className="benefits_block_content">
-              <motion.img
-                initial={{ y: -300, opacity: 0 }}
-                transition={{ duration: 1.2 }}
-                whileInView={{ opacity: 1, y: 0 }}
+              <img
                 loading="lazy"
                 className="img-fluid"
                 srcSet="/img/benifits/tiny2/5474.png 480w,/img/benifits/tiny2/5474.png 800w"
@@ -33,12 +35,7 @@ function BenefitsSection({}: Props) {
           </div>
           <div className="col-lg-4 col-6">
             <div className="benefits_block_content">
-              <motion.img 
-                initial={{y:-300,
-                opacity:0}}
-                transition={{duration:1.2}}
-                whileInView={{opacity:1,
-                y:0}}
+              <img
                 loading="lazy"
                 className="img-fluid"
                 srcSet="/img/benifits/tiny2/5475.png 480w,/img/benifits/tiny2/5475.png 800w"
@@ -59,12 +56,7 @@ function BenefitsSection({}: Props) {
           </div>
           <div className="col-lg-4 col-6">
             <div className="benefits_block_content">
-              <motion.img 
-                initial={{y:-300,
-                opacity:0}}
-                transition={{duration:1.2}}
-                whileInView={{opacity:1,
-                y:0}}
+              <img
                 loading="lazy"
                 className="img-fluid"
                 srcSet="/img/benifits/tiny2/5476.png 480w,/img/benifits/tiny2/5476.png 800w"
@@ -81,12 +73,7 @@ function BenefitsSection({}: Props) {
           </div>
           <div className="col-lg-4 col-6">
             <div className="benefits_block_content">
-              <motion.img 
-                initial={{y:-300,
-                opacity:0}}
-                transition={{duration:1.2}}
-                whileInView={{opacity:1,
-                y:0}}
+              <img
                 loading="lazy"
                 className="img-fluid"
                 srcSet="/img/benifits/tiny2/5477.png 480w,/img/benifits/tiny2/5477.png 800w"
@@ -105,12 +92,7 @@ function BenefitsSection({}: Props) {
           </div>
           <div className="col-lg-4 col-6">
             <div className="benefits_block_content benefits_block_content_middle pt-0">
-              <motion.img 
-                initial={{y:-300,
-                opacity:0}}
-                transition={{duration:1.2}}
-                whileInView={{opacity:1,
-                y:0}}
+              <img
                 loading="lazy"
                 className="img-fluid"
                 srcSet="/img/benifits/tiny2/5478.png 480w,/img/benifits/tiny2/5478.png 800w"
@@ -127,12 +109,7 @@ function BenefitsSection({}: Props) {
           </div>
           <div className="col-lg-4 col-6">
             <div className="benefits_block_content">
-              <motion.img 
-                initial={{y:-300,
-                opacity:0}}
-                transition={{duration:1.2}}
-                whileInView={{opacity:1,
-                y:0}}
+              <img
                 loading="lazy"
                 className="img-fluid"
                 srcSet="/img/benifits/tiny2/5479_1.png 480w,/img/benifits/tiny2/5479_1.png 800w"
