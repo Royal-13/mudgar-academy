@@ -6,7 +6,6 @@ import "react-toastify/dist/ReactToastify.css";
 import React, { useEffect, useRef, useState } from "react";
 type Props = {};
 function RegisterForm({}: Props) {
-
   const supabase = useSupabaseClient();
   const [formData, setFormData] = useState({
     name: "",
@@ -51,8 +50,8 @@ function RegisterForm({}: Props) {
         gender: formData.gender,
       },
     ]);
-    if(!error){
-      console.log("transaction added")
+    if (!error) {
+      console.log("transaction added");
     }
   };
 
@@ -103,7 +102,7 @@ function RegisterForm({}: Props) {
           address: formData.address,
           pincode: formData.pincode,
           state: formData.state,
-          gender:formData.gender,
+          gender: formData.gender,
         },
         email_confirm: true,
       });
@@ -120,28 +119,29 @@ function RegisterForm({}: Props) {
 
     async function checkout(id: string) {
       addTrans(id);
-      // router.push("https://razorpay.com/payment-button/pl_HAhlCsCYFddwiq/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button");
+      router.push(
+        "https://razorpay.com/payment-button/pl_HAhlCsCYFddwiq/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
+      );
     }
 
     //reset formdata
-    // setFormData({
-    //   name: "",
-    //   email: "",
-    //   phoneNumber: "",
-    //   city: "",
-    //   address: "",
-    //   pincode: "",
-    //   state: "",
-    //   time_slot: "",
-    //   isMudgar: "",
-    //   password: "",
-    //   gender: "",
-    // });
+    setFormData({
+      name: "",
+      email: "",
+      phoneNumber: "",
+      city: "",
+      address: "",
+      pincode: "",
+      state: "",
+      time_slot: "",
+      isMudgar: "",
+      password: "",
+      gender: "",
+    });
   };
 
   return (
     <div id="register_form" className="register_form text-center">
-      
       <h3 className="register_tag">Register Now</h3>
       {/* <div className="register_mobile_details">
           <span className="date-and-time"><img loading="lazy" src="/img/date-white.png" alt="Date" width={100} height={100} />
@@ -213,7 +213,6 @@ function RegisterForm({}: Props) {
                 required
                 id="name"
               />
-              
             </div>
             <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0">
               <label className="d-none">Email</label>
@@ -228,7 +227,6 @@ function RegisterForm({}: Props) {
                 id="email"
                 autoComplete="off"
               />
-              
             </div>
           </div>
 
@@ -247,8 +245,6 @@ function RegisterForm({}: Props) {
                 id="phone"
                 autoComplete="off"
               />
-
-              
             </div>
             <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0 city_div">
               <label className="d-none">City</label>
@@ -262,7 +258,6 @@ function RegisterForm({}: Props) {
                 onChange={onChange}
                 id="city"
               />
-              
             </div>
           </div>
           <div className="row">
@@ -278,7 +273,6 @@ function RegisterForm({}: Props) {
                 onChange={onChange}
                 id="address"
               />
-              
             </div>
             <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0 city_div">
               <label className="d-none">Pincode*</label>
@@ -292,7 +286,6 @@ function RegisterForm({}: Props) {
                 onChange={onChange}
                 id="pincode"
               />
-              
             </div>
           </div>
           <div className="row">
@@ -308,7 +301,6 @@ function RegisterForm({}: Props) {
                 onChange={onChange}
                 id="state"
               />
-              
             </div>
             {/* <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0 city_div">
               <select
@@ -385,7 +377,6 @@ function RegisterForm({}: Props) {
                   7 PM (IST)
                 </option>
               </select>
-              
             </div>
           </div>
 
@@ -476,7 +467,6 @@ function RegisterForm({}: Props) {
                     </a>
                     to login.
                   </label>
-                  
                 </div>
               </div>
             </div>
@@ -484,10 +474,10 @@ function RegisterForm({}: Props) {
 
           <button
             id="pay_button"
-            data-umami-event = "Pay Now Clicked"
-            data-umami-event-email='k@gmail'
-            data-umami-event-name='Singup'
-            data-umami-event-phone='7409130005'
+            data-umami-event="Pay Now Clicked"
+            data-umami-event-email="k@gmail"
+            data-umami-event-name="Singup"
+            data-umami-event-phone="7409130005"
             className="btn-get-started"
             style={{ marginTop: "0px" }}
             type="submit"
