@@ -14,9 +14,10 @@ function SectionThree({}: Props) {
               <div className="heading_cur1 habit_icon">
                 <img
                   loading="lazy"
-                  src="/img/habit2/tiny/1000.png"
+                  src="/img/habit2/tiny/swing 1.jpg"
                   alt="swings"
-                  className=""
+                  className="img-mobile"
+                  height={110}
                 />
               </div>
             </div>
@@ -34,12 +35,13 @@ function SectionThree({}: Props) {
               </div>
             </motion.div>
             <div className="curr_left">
-              <div className="heading_cur1 habit_icon m-0 p-0">
+              <div className="heading_cur1 habit_icon">
                 <img
                   loading="lazy"
-                  src="/img/habit2/tiny/1001.png"
+                  src="/img/habit2/tiny/swing 2.jpg"
                   alt="swings"
-                  className=""
+                  className="img-mobile-1"
+                  height={110}
                 />
               </div>
             </div>
@@ -60,9 +62,10 @@ function SectionThree({}: Props) {
               <div className="heading_cur1 habit_icon m-0 p-0">
                 <img
                   loading="lazy"
-                  src="/img/habit2/tiny/hand.png"
+                  src="/img/habit2/tiny/wrist.jpg"
                   alt="swings"
-                  className=""
+                  className="img-mobile-2"
+                  height={110}
                 />
               </div>
             </div>
@@ -83,9 +86,10 @@ function SectionThree({}: Props) {
               <div className="heading_cur1 habit_icon m-0 p-0">
                 <img
                   loading="lazy"
-                  src="/img/habit2/tiny/spine.png"
+                  src="/img/habit2/tiny/core.jpg"
                   alt="swings"
-                  className=""
+                  className="img-mobile-2"
+                  height={110}
                 />
               </div>
             </div>
@@ -106,9 +110,10 @@ function SectionThree({}: Props) {
               <div className="heading_cur1 habit_icon m-0 p-0">
                 <img
                   loading="lazy"
-                  src="/img/habit2/tiny/leg.png"
+                  src="/img/habit2/tiny/legs.jpg"
                   alt="swings"
-                  className=""
+                  className="img-mobile-2"
+                  height={110}
                 />
               </div>
             </div>
