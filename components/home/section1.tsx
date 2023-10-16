@@ -41,7 +41,7 @@ function SectionOne({ }: Props) {
             <img loading="lazy" src="/img/box/start.png" alt="Appointment" />
             <div className="stdate">Start Date</div>
             <div className="fulldate" id="workshop_date">
-              4th Sep, 2023 <br />
+              13th Nov, 2023 <br />
             </div>
           </motion.div>
 

@@ -31,7 +31,7 @@ const Float = () => {
           />
           3 Months / 12 Weeks{" "}
         </span>
-        <span className="date-and-time d-flex" onClick={toggleDropdown}>
+        {/* <span className="date-and-time d-flex" onClick={toggleDropdown}>
           <img
             loading="lazy"
             src="/img/time-blue.png"
@@ -52,7 +52,7 @@ const Float = () => {
               ))}
             </ul>
           </div>
-        </span>
+        </span> */}
         <span className="date-and-time offer">
           <img
             loading="lazy"
@@ -61,7 +61,7 @@ const Float = () => {
             width={100}
             height={100}
           />{" "}
-          Limited Time Offer:₹ <s>6000</s> <br/>
+          Early Bird Offer:₹ <s>6000</s> <br/>
           <span id="center-align-1">4700</span>
         </span>
         <a
@@ -141,7 +141,7 @@ const Float = () => {
           </a>
         </div>
         <div className="register_mobile_detail">
-          <span className="date-and-time offer" id="sale-time"><img loading="lazy" src="/img/saletime.png" alt="Sale" />Limited Time Offer<br/>
+          <span className="date-and-time offer" id="sale-time"><img loading="lazy" src="/img/saletime.png" alt="Sale" />Early Bird Offer<br/>
           <s>Old Price : 6000</s> New Price: 4700
           </span>
           <span className="date-and-time register_count_mobile"><img loading="lazy" src="/img/group.png" alt="Group" width={100} height={100} /><span><strong>1200+</strong> registered</span></span>

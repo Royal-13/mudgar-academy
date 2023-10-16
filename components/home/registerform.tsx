@@ -19,6 +19,7 @@ function RegisterForm({}: Props) {
     time_slot: "",
     isMudgar: "Yes",
     password: "",
+    gender: "",
   });
   const [isChecked, setIsChecked] = useState(false);
   const [single, setSingle] = useState(false);
@@ -43,6 +44,11 @@ function RegisterForm({}: Props) {
         payment_id: "pending",
         is_mudgar: formData.isMudgar,
         time_slot: formData.time_slot,
+        address: formData.address,
+        city: formData.city,
+        state: formData.state,
+        pincode: formData.pincode,
+        gender: formData.gender,
       },
     ]);
     if(!error){
@@ -63,6 +69,7 @@ function RegisterForm({}: Props) {
     pincode,
     state,
     time_slot,
+    gender,
     isMudgar,
     password,
   } = formData;
@@ -79,7 +86,6 @@ function RegisterForm({}: Props) {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formData);
-
     let resLength = 0;
     const res = await getUser(formData.email.toLowerCase()).then((result) => {
       resLength = result.length;
@@ -97,6 +103,7 @@ function RegisterForm({}: Props) {
           address: formData.address,
           pincode: formData.pincode,
           state: formData.state,
+          gender:formData.gender,
         },
         email_confirm: true,
       });
@@ -113,22 +120,23 @@ function RegisterForm({}: Props) {
 
     async function checkout(id: string) {
       addTrans(id);
-      router.push("https://razorpay.com/payment-button/pl_HAhlCsCYFddwiq/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button");
+      // router.push("https://razorpay.com/payment-button/pl_HAhlCsCYFddwiq/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button");
     }
 
     //reset formdata
-    setFormData({
-      name: "",
-      email: "",
-      phoneNumber: "",
-      city: "",
-      address: "",
-      pincode: "",
-      state: "",
-      time_slot: "",
-      isMudgar: "",
-      password: "",
-    });
+    // setFormData({
+    //   name: "",
+    //   email: "",
+    //   phoneNumber: "",
+    //   city: "",
+    //   address: "",
+    //   pincode: "",
+    //   state: "",
+    //   time_slot: "",
+    //   isMudgar: "",
+    //   password: "",
+    //   gender: "",
+    // });
   };
 
   return (
@@ -263,7 +271,7 @@ function RegisterForm({}: Props) {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Address*"
+                placeholder="Full Address*"
                 name="address"
                 value={address}
                 required
@@ -316,6 +324,19 @@ function RegisterForm({}: Props) {
               </select>
               <div id="state_error" />
             </div> */}
+            <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0 city_div">
+              <select
+                name="gender"
+                value={gender}
+                onChange={onChangeSelect}
+                id="time_slot-1"
+                className="custom-select"
+              >
+                <option value="">Choose your gender *</option>
+                <option value={"male"}>Male</option>
+                <option value={"female"}>Female</option>
+              </select>
+            </div>
           </div>
 
           <div className="row ">
