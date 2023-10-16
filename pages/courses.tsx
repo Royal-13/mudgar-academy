@@ -26,6 +26,7 @@ const index = () => {
     });
   return (
     <>
+      
       <Header session={isUserLoggedIn}/>
       <main id="main">
         <section id="included" className="Included">
