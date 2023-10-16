@@ -475,9 +475,9 @@ function RegisterForm({}: Props) {
           <button
             id="pay_button"
             data-umami-event="Pay Now Clicked"
-            data-umami-event-email="k@gmail"
-            data-umami-event-name="Singup"
-            data-umami-event-phone="7409130005"
+            data-umami-event-email={formData.email}
+            data-umami-event-name={formData.name}
+            data-umami-event-phone={formData.phoneNumber}
             className="btn-get-started"
             style={{ marginTop: "0px" }}
             type="submit"
