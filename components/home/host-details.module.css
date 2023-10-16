@@ -3840,7 +3840,7 @@ a.learn-more {
 }
 .profilecover {
   background-color: #ccc;
-  background-image: url(https://legendary-pastelito-465cc1.netlify.app/banner.jpeg);
+  background-image: url(/img/banner-desktop.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3852,6 +3852,7 @@ a.learn-more {
   border-radius: 50%;
   cursor: pointer;
 }
+
 @media (min-width: 992px) {
   .profile-photo > img {
     height: 193px;

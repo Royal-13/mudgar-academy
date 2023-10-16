@@ -45,7 +45,7 @@ function SectionTwo({ }: Props) {
                 opacity:0}}
                 transition={{duration:1.2}}
                 whileInView={{opacity:1,
-                y:0}} loading="lazy" className="rounded-whats-img" srcSet="/img/whats/tiny_v3/3.webp 480w,/img/whats/tiny_v3/3.webp 800w" sizes="(max-width: 600px) 480px, 800px" src="/img/whats/tiny_v3/3.webp" />
+                y:0}} loading="lazy" className="rounded-whats-img" srcSet="/img/whats/tiny_v3/recording1.png 480w,/img/whats/tiny_v3/recording1.png 800w" sizes="(max-width: 600px) 480px, 800px" src="/img/whats/tiny_v3/recording1.png" />
               <div className="include_details_bg">
                 <h4>RECORDED SESSIONS OF EVERY CLASS</h4>
                 <div className="include_text pb-4">Daily recorded sessions of all classes will be available for the next three months from the start of the course.</div>

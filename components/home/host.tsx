@@ -19,7 +19,7 @@ function Host({}: Props) {
               <a href="/hostdetails">
                 <img
                   loading="lazy"
-                  src="/img/faqs/anjit.jpg"
+                  src="/img/card-image.jpg"
                   alt="Host 1"
                   className="about_img "
                 />
@@ -40,19 +40,19 @@ function Host({}: Props) {
             className="col-md-6"
           >
             <div className="card mb-4">
-              <a href="/hostdetails">
+              <a href="/instructordetails">
                 <img
                   loading="lazy"
-                  src="/img/faqs/jyotsana.jpeg"
+                  src="/img/card-image-1.jpg"
                   alt="Host 2"
                   className="about_img "
                 />
               </a>
               <div className="card-body">
-                <a href="/hostdetails">
+                <a href="/instructordetails">
                   <h3 className="brown_heading_1">Jyotsana</h3>
                 </a>
-                <p className="about_text">Co-Founder</p>
+                <p className="about_text">Instructor</p>
               </div>
             </div>
           </motion.div>
