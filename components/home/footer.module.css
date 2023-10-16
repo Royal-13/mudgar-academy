@@ -154,3 +154,33 @@
       margin-bottom: 10px;
     }
   }
+
+
+.socialIcons {
+  display: flex;
+  justify-content: left;
+  margin: 20px 0;
+}
+
+.socialIcon {
+  margin: 0 10px;
+  font-size: 30px;
+  color: #333; 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.socialIcon:hover {
+  color: #965940; 
+}
+
+@media (max-width: 768px) {
+  .socialIcons {
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .socialIcon {
+    margin: 10px 0;
+  }
+}

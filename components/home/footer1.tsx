@@ -1,5 +1,10 @@
 import React from "react";
 import styles1 from "./footer.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faFacebook } from "@fortawesome/free-brands-svg-icons/faFacebook";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons/faInstagram";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons/faYoutube";
 
 type Props = {};
 
@@ -72,6 +77,26 @@ function Footer1({}: Props) {
           </span>
         </div> */}
       </div>
+      <div className={styles1.socialIcons}>
+          <a
+            href="https://youtube.com/@MudgarClub?si=itOu-qmO42WkGxpz"
+            className={styles1.socialIcon}
+          >
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a
+            href="https://youtube.com/@MudgarClub?si=itOu-qmO42WkGxpz"
+            className={styles1.socialIcon}
+          >
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          <a
+            href="https://instagram.com/mudgarclub?igshid=MzRlODBiNWFlZA=="
+            className={styles1.socialIcon}
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+        </div>
     </footer>
     </div>
   );
