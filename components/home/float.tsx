@@ -61,7 +61,8 @@ const Float = () => {
             width={100}
             height={100}
           />{" "}
-          Limited Time Offer:₹ <s>6000</s> 4700
+          Limited Time Offer:₹ <s>6000</s> <br/>
+          <span id="center-align-1">4700</span>
         </span>
         <a
           href="#register_form"

@@ -173,20 +173,20 @@ function Testimonial({}: Props) {
                   width={20}
                   height={19}
                 />
-                <img
+                {/* <img
                   loading="lazy"
                   src="/img/star.png"
                   alt="Star"
                   width={20}
                   height={19}
-                />
-                <img
+                /> */}
+                {/* <img
                   loading="lazy"
                   src="/img/star.png"
                   alt="Star"
                   width={20}
                   height={19}
-                />
+                /> */}
               </div>
               <div className="name">Kavita Reddy</div>
               <div className="place">27, West Bengal</div>
@@ -266,7 +266,7 @@ function Testimonial({}: Props) {
               <img
                 loading="lazy"
                 className="person"
-                src="/img/review_images/new/radhika_sharma.png"
+                src="/img/review_images/new/nitin_sharma.jpg"
                 alt="People"
                 width={100}
                 height={100}
@@ -308,8 +308,8 @@ function Testimonial({}: Props) {
                   height={19}
                 /> */}
               </div>
-              <div className="name">Radhika Sharma</div>
-              <div className="place">22, Mumbai</div>
+              <div className="name">Nitin Sharma</div>
+              <div className="place">32, Mumbai</div>
             </motion.div>
             <div className="detail show-read-more">
               I've always been skeptical about online fitness programs, but
