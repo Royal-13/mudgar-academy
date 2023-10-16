@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const [supabaseClient] = useState(() => createBrowserSupabaseClient());
   return (
     <>
-    <Script src="https://analytics.eu.umami.is/script.js" data-website-id="d4065aa7-8796-459d-8ff1-4e0e4334739f" />
+    <Script src="https://analytics.eu.umami.is/script.js" data-website-id="a8b5e580-fa1b-438f-97ec-f687d2c96ddd" />
       <SessionContextProvider
         supabaseClient={supabaseClient}
         initialSession={pageProps.initialSession}
