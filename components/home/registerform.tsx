@@ -133,18 +133,7 @@ function RegisterForm({}: Props) {
 
   return (
     <div id="register_form" className="register_form text-center">
-      <ToastContainer
-        position="bottom-center"
-        autoClose={2000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
+      
       <h3 className="register_tag">Register Now</h3>
       {/* <div className="register_mobile_details">
           <span className="date-and-time"><img loading="lazy" src="/img/date-white.png" alt="Date" width={100} height={100} />

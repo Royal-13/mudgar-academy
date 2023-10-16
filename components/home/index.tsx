@@ -13,6 +13,8 @@ import Footer from "./footer"
 import Testimonial from "./testimonials"
 import { type } from "os"
 import Footer1 from "./footer1"
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import CountdownMobile from "./countdown_mobile"
 
 type Props = {
@@ -20,8 +22,40 @@ type Props = {
 };
 
 export default function HomePage({session}: Props) {
+
+
+  const numbers = [1, 2, 3, 4, 5];
+  const places = [
+    "Noida", "Baroda", "Navi Mumbai", "Delhi", "Chennai", "Assam", "Indore", "Sonipat", "Bangalore"
+  ]
+
+  function logRandomData(){
+
+    const random_number = Math.floor(Math.random() * 5);
+    const random_place = Math.floor(Math.random() * 9);
+
+    const number = numbers[random_number];
+    const place = places[random_place];
+
+    toast.info(`+${number} people from ${place} just joined the waitlist!`);
+  }
+
+  setInterval(logRandomData, 15000);
+
   return (
     <>
+    <ToastContainer
+        position="top-left"
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <Header session={session}/>
       <Hero />
       <main id="main">
