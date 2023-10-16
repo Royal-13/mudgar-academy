@@ -9946,8 +9946,10 @@ a:hover {
 }
 .counter_block_text {
   color: #965940;
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: 700;
   margin-bottom: 15px;
+  animation: blink 1s infinite;
 }
 .counter_digit_block .block:first-child {
   margin-left: 0;

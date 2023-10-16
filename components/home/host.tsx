@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -8,7 +9,12 @@ function Host({}: Props) {
       <div id="about-1" className="white_block about-1 text-center">
         <h4 className="brown_heading py-3">Our Hosts</h4>
         <div className="row " id="pad-1">
-          <div className="col-md-6">
+          <motion.div
+            initial={{ opacity: 0, y: -300 }}
+            transition={{ duration: 1.2 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="col-md-6"
+          >
             <div className="card mb-4">
               <a href="/hostdetails">
                 <img
@@ -25,9 +31,14 @@ function Host({}: Props) {
                 <p className="about_text">Founder</p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="col-md-6">
+          <motion.div
+            initial={{ opacity: 0, y: -300 }}
+            transition={{ duration: 1 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="col-md-6"
+          >
             <div className="card mb-4">
               <a href="/hostdetails">
                 <img
@@ -44,7 +55,7 @@ function Host({}: Props) {
                 <p className="about_text">Co-Founder</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

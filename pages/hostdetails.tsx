@@ -24,6 +24,7 @@ const  detailshost= () => {
       });
     return (
         <>
+        <Header session={isUserLoggedIn}/>
         <HostDetail/>
         <Footer1/>
         </>

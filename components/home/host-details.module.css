@@ -3183,6 +3183,7 @@ h1.profile-name {
   .pad-1 {
     padding-top: 0;
   }
+  
 }
 /* @media (min-width: 480px) and (max-width: 767px) {
   body {
@@ -3278,15 +3279,16 @@ h1.profile-name {
   content: none;
 }
 .coach-container .profile .profilecover {
-  min-height: 200px;
-  height: 450px;
-  max-height: none;
+  height: 200px;
+  width: 100%;
   position: relative;
   margin-bottom: 0;
+  inset: 0;
+  object-fit: cover;
 }
 @media (min-width: 992px) {
   .coach-container .profile .profilecover {
-    height: 600px;
+    height: 900px;
   }
   .coach-container .profile .profilecover h2 {
     padding-left: 210px;
@@ -3862,12 +3864,12 @@ a.learn-more {
 .profile .profilecover {
   margin: 0 auto;
   min-height: 105px;
-  max-height: 105px;
+  
   overflow: hidden;
 }
 @media (min-width: 768px) {
   .profile .profilecover {
-    max-height: 300px;
+    max-height: 800px;
   }
 }
 .profile .profilecover:before {

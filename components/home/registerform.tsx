@@ -133,18 +133,7 @@ function RegisterForm({}: Props) {
 
   return (
     <div id="register_form" className="register_form text-center">
-      <ToastContainer
-        position="bottom-center"
-        autoClose={2000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
+      
       <h3 className="register_tag">Register Now</h3>
       {/* <div className="register_mobile_details">
           <span className="date-and-time"><img loading="lazy" src="/img/date-white.png" alt="Date" width={100} height={100} />
@@ -216,7 +205,7 @@ function RegisterForm({}: Props) {
                 required
                 id="name"
               />
-              <div id="name_error" />
+              
             </div>
             <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0">
               <label className="d-none">Email</label>
@@ -231,7 +220,7 @@ function RegisterForm({}: Props) {
                 id="email"
                 autoComplete="off"
               />
-              <div id="email_error" />
+              
             </div>
           </div>
 
@@ -251,7 +240,7 @@ function RegisterForm({}: Props) {
                 autoComplete="off"
               />
 
-              <div id="mob_error" />
+              
             </div>
             <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0 city_div">
               <label className="d-none">City</label>
@@ -265,7 +254,7 @@ function RegisterForm({}: Props) {
                 onChange={onChange}
                 id="city"
               />
-              <div id="city_error" />
+              
             </div>
           </div>
           <div className="row">
@@ -281,7 +270,7 @@ function RegisterForm({}: Props) {
                 onChange={onChange}
                 id="address"
               />
-              <div id="address_error" />
+              
             </div>
             <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0 city_div">
               <label className="d-none">Pincode*</label>
@@ -295,7 +284,7 @@ function RegisterForm({}: Props) {
                 onChange={onChange}
                 id="pincode"
               />
-              <div id="pincode_error" />
+              
             </div>
           </div>
           <div className="row">
@@ -311,7 +300,7 @@ function RegisterForm({}: Props) {
                 onChange={onChange}
                 id="state"
               />
-              <div id="state_error" />
+              
             </div>
             {/* <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0 city_div">
               <select
@@ -375,7 +364,7 @@ function RegisterForm({}: Props) {
                   7 PM (IST)
                 </option>
               </select>
-              <div id="time_slot_error" />
+              
             </div>
           </div>
 
@@ -466,7 +455,7 @@ function RegisterForm({}: Props) {
                     </a>
                     to login.
                   </label>
-                  <div id="terms_error" />
+                  
                 </div>
               </div>
             </div>
@@ -474,6 +463,10 @@ function RegisterForm({}: Props) {
 
           <button
             id="pay_button"
+            data-umami-event = "Pay Now Clicked"
+            data-umami-event-email='k@gmail'
+            data-umami-event-name='Singup'
+            data-umami-event-phone='7409130005'
             className="btn-get-started"
             style={{ marginTop: "0px" }}
             type="submit"
