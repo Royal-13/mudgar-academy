@@ -1225,7 +1225,10 @@ input.loading {
 }
 
 
-
+.image-radius{
+  border-radius: 25px;
+  
+}
 
 /* Custom select styles */
 .select {

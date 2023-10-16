@@ -45,9 +45,10 @@ const index = () => {
                           <div className="heading_cur1 habit_icon">
                             <img
                               loading="lazy"
-                              src="/img/habit2/tiny/shoulder.png"
+                              src="/img/whats/tiny_v3/mudgar1.jpg"
                               alt="healthy"
-                              className=""
+                              className="image-radius"
+                              height={110}
                             />
                           </div>
                         </div>
@@ -64,9 +65,10 @@ const index = () => {
                           <div className="heading_cur1 habit_icon m-0 p-0">
                             <img
                               loading="lazy"
-                              src="/img/habit2/tiny/muscles.png"
+                              src="/img/whats/tiny_v3/live class1.jpg"
                               alt="healthy"
-                              className=""
+                              className="image-radius"
+                              height={110}
                             />
                           </div>
                         </div>
@@ -82,9 +84,10 @@ const index = () => {
                           <div className="heading_cur1 habit_icon m-0 p-0">
                             <img
                               loading="lazy"
-                              src="/img/habit2/tiny/hand.png"
+                              src="/img/whats/tiny_v3/recording.jpg"
                               alt="healthy"
-                              className=""
+                              className="image-radius"
+                              height={110}
                             />
                           </div>
                         </div>
@@ -101,9 +104,10 @@ the course.
                           <div className="heading_cur1 habit_icon m-0 p-0">
                             <img
                               loading="lazy"
-                              src="/img/habit2/tiny/spine.png"
+                              src="/img/whats/tiny_v3/people1.jpg"
                               alt="healthy"
-                              className=""
+                              className="image-radius"
+                              height={110}
                             />
                           </div>
                         </div>
@@ -120,9 +124,10 @@ the biggest mudgar club possible for the next three months.
                           <div className="heading_cur1 habit_icon m-0 p-0">
                             <img
                               loading="lazy"
-                              src="/img/habit2/tiny/leg.png"
+                              src="/img/whats/tiny_v3/maintainance1.jpg"
                               alt="healthy"
-                              className=""
+                              className="image-radius"
+                              height={110}
                             />
                           </div>
                         </div>
