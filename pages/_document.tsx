@@ -7,8 +7,8 @@ export default function Document() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#e3a54a" />
         <title>Movement With Mudgar</title>
-        <meta name="description" content="Learn 7 life transforming habits in 21 days" />
-        <meta name="robots" content="noindex,follow" />
+        <meta name="description" content="Learn Mudgar transforming your habits in 12 weeks" />
+        <link rel="manifest" href="/manifest.json" />
         <link href="/img/meta_icon/favicon.ico" rel="icon" />
         <link href="/img/meta_icon/favicon.ico" rel="apple-touch-icon" />
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap" as="style" />
