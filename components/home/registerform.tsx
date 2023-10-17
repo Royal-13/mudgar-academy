@@ -443,7 +443,7 @@ function RegisterForm({}: Props) {
                   className="form-check-input"
                   type="checkbox"
                   required
-                  defaultValue=""
+                  checked
                   id="pre_recorded"
                 />
                 <label className="form-check-label ps-0" htmlFor="pre_recorded">
@@ -457,7 +457,7 @@ function RegisterForm({}: Props) {
                 <input
                   className="form-check-input"
                   type="checkbox"
-                  defaultValue=""
+                  checked
                   required
                   id="terms"
                 />
