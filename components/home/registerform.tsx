@@ -34,8 +34,6 @@ function RegisterForm({}: Props) {
   //   Form.appendChild(Script);
   // },[])
 
-  
-
   const addTrans = async (userId: string) => {
     const { data, error } = await supabase.from("transactions").insert([
       {
@@ -125,7 +123,6 @@ function RegisterForm({}: Props) {
         "https://razorpay.com/payment-button/pl_MpA6Z0FdxKrXxg/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
       );
     }
-
 
     //2700 code link
     // <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MpAFFvGgUW7ZIC" async> </script> </form>
@@ -484,6 +481,13 @@ function RegisterForm({}: Props) {
                     to login.
                   </label>
                 </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-lg-12 mb-3 mb-sm-0">
+              <div className="form-check radio-container checkbox-space2">
+                <label className="form-check-labels ps-0 pb-0" htmlFor="terms">
+                  Mudgar will be delivered to your address in 10-12 days.{" "}  
+                </label>
               </div>
             </div>
           </div>

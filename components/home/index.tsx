@@ -22,15 +22,36 @@ type Props = {
 export default function HomePage({ session }: Props) {
   const numbers = [1, 2, 3];
   const places = [
-    "Noida",
-    "Baroda",
-    "Navi Mumbai",
     "Delhi",
-    "Chennai",
-    "Assam",
-    "Indore",
-    "Sonipat",
+    "Mumbai",
+    "Agra",
+    "Jaipur",
     "Bangalore",
+    "Kolkata",
+    "Chennai",
+    "Hyderabad",
+    "Varanasi",
+    "Goa",
+    "Kerala",
+    "Udaipur",
+    "Shimla",
+    "Darjeeling",
+    "Amritsar",
+    "Rishikesh",
+    "Hampi",
+    "Mysore",
+    "Pondicherry",
+    "Jaisalmer",
+    "Ladakh",
+    "Rann of Kutch",
+    "Ooty",
+    "Mahabaleshwar",
+    "Srinagar",
+    "Haridwar",
+    "Munnar",
+    "Pushkar",
+    "Andaman and Nicobar Islands",
+    "Guwahati"
   ];
 
   function logRandomData() {
@@ -43,13 +64,13 @@ export default function HomePage({ session }: Props) {
     toast.info(`+${number} people from ${place} just joined the waitlist!`);
   }
 
-  // setInterval(logRandomData, 15000);
+  setInterval(logRandomData, 20000);
 
   return (
     <>
       <ToastContainer
         position="top-left"
-        autoClose={1000}
+        autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
