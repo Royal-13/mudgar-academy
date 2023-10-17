@@ -10841,6 +10841,11 @@ a:hover {
     /* height: auto; */
     width: auto;
   }
+  @media (max-width:991){
+    .benefits_block_content img{
+      width: auto;
+    }
+  }
   #header .logo {
     margin-top: -6px;
   }

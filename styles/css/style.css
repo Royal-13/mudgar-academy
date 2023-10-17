@@ -1352,11 +1352,7 @@ input.loading {
 
 }
 /* BenefitsSection.css */
-.consistent-height {
-  object-fit: cover;
-  height: 100%; /* Set the height to 100% of the parent container */
-  width: 100%; /* Ensure the image takes up the full width of its container */
-}
+
 
 /* .select-arrow-1 {
   position: absolute;
