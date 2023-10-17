@@ -21,9 +21,9 @@ function BenefitsSection({}: Props) {
               <img
                 loading="lazy"
                 className="img-fluid"
-                srcSet="/img/benifits/tiny2/active start.jpg 480w,/img/benifits/tiny2/active start.jpg 800w"
+                srcSet="/img/benifits/tiny2/active start-min.jpg 480w,/img/benifits/tiny2/active start-min.jpg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
-                src="/img/benifits/tiny2/active start.jpg"
+                src="/img/benifits/tiny2/active start-min.jpg"
               />
               <div className="benefits_desc">
                 <div>Active start</div>
@@ -38,9 +38,9 @@ function BenefitsSection({}: Props) {
               <img
                 loading="lazy"
                 className="img-fluid"
-                srcSet="/img/whats/tiny_v3/overall2.jpeg 480w,/img/whats/tiny_v3/overall2.jpeg 800w"
+                srcSet="/img/benifits/tiny2/strength-min.jpg 480w,/img/benifits/tiny2/strength-min.jpg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
-                src="/img/whats/tiny_v3/overall2.jpeg"
+                src="/img/benifits/tiny2/strength-min.jpg"
               />
               <div className="benefits_desc">
                 <div>
@@ -59,9 +59,9 @@ function BenefitsSection({}: Props) {
               <img
                 loading="lazy"
                 className="img-fluid"
-                srcSet="/img/benifits/tiny2/motion.jpg 480w,/img/benifits/tiny2/motion.jpg 800w"
+                srcSet="/img/benifits/tiny2/motion-min.jpg 480w,/img/benifits/tiny2/motion-min.jpg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
-                src="/img/benifits/tiny2/motion.jpg"
+                src="/img/benifits/tiny2/motion-min.jpg"
               />
               <div className="benefits_desc">
                 <div>
@@ -76,9 +76,9 @@ function BenefitsSection({}: Props) {
               <img
                 loading="lazy"
                 className="img-fluid"
-                srcSet="/img/benifits/tiny2/body.jpg 480w,/img/benifits/tiny2/body.jpg 800w"
+                srcSet="/img/benifits/tiny2/body-min.jpg 480w,/img/benifits/tiny2/body-min.jpg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
-                src="/img/benifits/tiny2/body.jpg"
+                src="/img/benifits/tiny2/body-min.jpg"
               />
               <div className="benefits_desc">
                 <div>
@@ -95,9 +95,9 @@ function BenefitsSection({}: Props) {
               <img
                 loading="lazy"
                 className="img-fluid"
-                srcSet="/img/benifits/tiny2/mind.jpg 480w,/img/benifits/tiny2/mind.jpg 800w"
+                srcSet="/img/benifits/tiny2/mind-min.jpg 480w,/img/benifits/tiny2/mind-min.jpg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
-                src="/img/benifits/tiny2/mind.jpg"
+                src="/img/benifits/tiny2/mind-min.jpg"
               />
               <div className="benefits_desc">
                 <div>Better mind and</div>
@@ -112,9 +112,9 @@ function BenefitsSection({}: Props) {
               <img
                 loading="lazy"
                 className="img-fluid"
-                srcSet="/img/benifits/tiny2/freedom.jpg 480w,/img/benifits/tiny2/freedom.jpg 800w"
+                srcSet="/img/benifits/tiny2/freedom-min.jpg 480w,/img/benifits/tiny2/freedom-min.jpg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
-                src="/img/benifits/tiny2/freedom.jpg"
+                src="/img/benifits/tiny2/freedom-min.jpg"
               />
               <div className="benefits_desc">
                 <div>
