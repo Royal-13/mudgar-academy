@@ -38,9 +38,9 @@ function BenefitsSection({}: Props) {
               <img
                 loading="lazy"
                 className="img-fluid"
-                srcSet="/img/benifits/tiny2/strength.jpg 480w,/img/benifits/tiny2/strength.jpg 800w"
+                srcSet="/img/whats/tiny_v3/overall2.jpeg 480w,/img/whats/tiny_v3/overall2.jpeg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
-                src="/img/benifits/tiny2/strength.jpg"
+                src="/img/whats/tiny_v3/overall2.jpeg"
               />
               <div className="benefits_desc">
                 <div>
