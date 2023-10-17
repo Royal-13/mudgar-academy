@@ -142,7 +142,17 @@ function RegisterForm({}: Props) {
 
   return (
     <div id="register_form" className="register_form text-center">
+      <span className="date-and-time offer">
+        <img
+          loading="lazy"
+          src="/img/saletime.png"
+          alt="Date"
+          width={100}
+          height={100}
+        />{" "}
+      </span>
       <h3 className="register_tag">Register Now</h3>
+
       {/* <div className="register_mobile_details">
           <span className="date-and-time"><img loading="lazy" src="/img/date-white.png" alt="Date" width={100} height={100} />
             4th Sep - 24th Sep everyday </span>
