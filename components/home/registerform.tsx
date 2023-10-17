@@ -29,10 +29,12 @@ function RegisterForm({}: Props) {
   //   //id should be same as given to form element
   //   const Form = document.getElementById('donateForm');
   //   Script.setAttribute('src','https://checkout.razorpay.com/v1/payment-button.js')
-  //   Script.setAttribute('data-payment_button_id','pl_HAhlCsCYFddwiq')
+  //   Script.setAttribute('data-payment_button_id','pl_MpA6Z0FdxKrXxg')
   //   //@ts-ignore
   //   Form.appendChild(Script);
   // },[])
+
+  
 
   const addTrans = async (userId: string) => {
     const { data, error } = await supabase.from("transactions").insert([
@@ -120,9 +122,13 @@ function RegisterForm({}: Props) {
     async function checkout(id: string) {
       addTrans(id);
       router.push(
-        "https://razorpay.com/payment-button/pl_HAhlCsCYFddwiq/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
+        "https://razorpay.com/payment-button/pl_MpA6Z0FdxKrXxg/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
       );
     }
+
+
+    //2700 code link
+    // <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MpAFFvGgUW7ZIC" async> </script> </form>
 
     //reset formdata
     setFormData({
