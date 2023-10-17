@@ -426,15 +426,14 @@ function RegisterForm({}: Props) {
                   type="checkbox"
                   defaultValue=""
                   required
+                  checked
                   id="selected_time_slot"
                 />
                 <label
                   className="form-check-label ps-0"
                   htmlFor="selected_time_slot"
                 >
-                  I am aware that I have to be available at my given time slot
-                  for all days. I <b>cannot change my time slot</b> once
-                  selected.
+                  I am aware that I can join the class at any time available in the slots.
                 </label>
               </div>
             </div>
@@ -449,7 +448,7 @@ function RegisterForm({}: Props) {
                 />
                 <label className="form-check-label ps-0" htmlFor="pre_recorded">
                   I am aware that <b>recordings</b> for the sessions will{" "}
-                  <b>not</b> be provided.
+                  be provided only for <b>3 months</b>.
                 </label>
               </div>
             </div>
@@ -464,7 +463,7 @@ function RegisterForm({}: Props) {
                 />
                 <label className="form-check-label ps-0 pb-0" htmlFor="terms">
                   I agree and accept the{" "}
-                  <a href="/terms" target="_blank">
+                  <a href="https://mudgarclub.com/policy?page_type=1" target="_blank">
                     terms and conditions
                   </a>
                   .

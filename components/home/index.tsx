@@ -64,7 +64,7 @@ export default function HomePage({ session }: Props) {
     toast.info(`+${number} people from ${place} just joined the waitlist!`);
   }
 
-  setInterval(logRandomData, 20000);
+  // setInterval(logRandomData, 20000);
 
   return (
     <>
