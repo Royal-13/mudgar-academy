@@ -4,6 +4,7 @@ import Footer1 from "@/components/home/footer1";
 import Header from "@/components/home/header";
 import RegisterForm from "@/components/home/registerform";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
+import Head from "next/head";
 import React, { useState } from "react";
 const index = () => {
   const supabaseClient = useSupabaseClient();
@@ -26,7 +27,20 @@ const index = () => {
     });
   return (
     <>
-      
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#e3a54a" />
+        <title>Courses</title>
+        <meta
+          name="description"
+          content="Mudgar Classes"
+        ></meta>
+        <meta
+          name="og:description"
+          content="Mudgar Classes"
+        ></meta>
+      </Head>
       <Header session={isUserLoggedIn}/>
       <main id="main">
         <section id="included" className="Included">

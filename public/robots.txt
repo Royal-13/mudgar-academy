@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://mudgar-academy.netlify.app/sitemap.xml
+Sitemap: https://mudgarclubacademy.com/sitemap.xml
