@@ -97,7 +97,7 @@ function HostDetail({}: Props) {
                   <img
                     alt="Anjit"
                     className={styles["profile-photo-image"]}
-                    src="/img/host-profile-desktop-min.jpg"
+                    src="/img/profile-desktop-min.jpg"
                   />
                 </div>
               </div>
