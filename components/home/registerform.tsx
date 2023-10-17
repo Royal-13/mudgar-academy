@@ -279,7 +279,7 @@ function RegisterForm({}: Props) {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Full Address*"
+                placeholder="Full Address for Mudgar delivery*"
                 name="address"
                 value={address}
                 required
@@ -485,7 +485,7 @@ function RegisterForm({}: Props) {
             <div className="col-sm-12 col-lg-12 mb-3 mb-sm-0">
               <div className="form-check radio-container checkbox-space2">
                 <label className="form-check-labels ps-0 pb-0" htmlFor="terms">
-                  Mudgar will be delivered to your address in 10-12 days.{" "}  
+                  Mudgar will be delivered to your address in 12-15 days.{" "}  
                 </label>
               </div>
             </div>

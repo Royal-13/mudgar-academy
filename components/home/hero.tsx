@@ -32,7 +32,7 @@ function Hero({}: Props) {
                 <a href="#register_form" id="register_now_btn" className="btn-get-started scrollto register-now-track-btn" data-btn="main-cta">Register Now<img loading="lazy" className="btn_arrow" id="right_register_arrow" src="/img/btn-arrow.png" alt="Arrow" width="20px" height="14px" style={{ display: 'none' }} /></a>
               </div>
               <div className="people_joined"><span id="user_count">
-                  1200+ </span> people have already joined</div>
+                  Learn 30-40 </span> types of Mudgar swings in these 3 months</div>
               <div className="gray_line" />
               <div className="countdown_desktop"><div className="counter_block">
                   <div className="counter_block_text"> Early Bird Offer !!!</div>

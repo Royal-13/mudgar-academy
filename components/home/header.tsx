@@ -36,16 +36,6 @@ function Header({session}: Props) {
             <li>
               <a
                 className="nav-link scrollto menu-btn"
-                data-menu="course"
-                href="/courses"
-                target=""
-              >
-                Courses
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link scrollto menu-btn"
                 data-menu="shop"
                 href="https://mudgarclub.com/"
                 target=""

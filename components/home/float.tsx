@@ -141,10 +141,10 @@ const Float = () => {
           </a>
         </div>
         <div className="register_mobile_detail">
-          <span className="date-and-time offer" id="sale-time"><img loading="lazy" src="/img/saletime.png" alt="Sale" />Early Bird Offer<br/>
-          <s>Old Price : 6000</s> New Price: 4700
+          <span className="date-and-time offer" id="sale-time"><img loading="lazy" src="/img/saletime.png" alt="Sale" />Early Bird Offer:
+          ₹<s>6000</s> 4700
           </span>
-          <span className="date-and-time register_count_mobile"><img loading="lazy" src="/img/group.png" alt="Group" width={100} height={100} /><span><strong>1200+</strong> registered</span></span>
+          <span className="date-and-time register_count_mobile"><img loading="lazy" src="/img/group.png" alt="Group" width={100} height={100} /><span><strong>1065</strong> registered</span></span>
         </div>
       </div>
     </>

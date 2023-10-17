@@ -20,7 +20,7 @@ function SectionTwo({ }: Props) {
                 y:0}} loading="lazy" className="rounded-whats-img" srcSet="/img/whats/tiny_v3/mudgar1.jpg 480w,/img/whats/tiny_v3/mudgar1.jpg 800w" sizes="(max-width: 600px) 480px, 800px" src="/img/whats/tiny_v3/mudgar1.jpg" />
               <div className="include_details_bg">
                 <h4>COMPLEMENTARY MUDGAR</h4>
-                <div className="include_text">As part of this course, a mudgar weighing 5-6kgs will be provided to men, and a mudgar weighing 3-4kgs will be provided to women, so you don't have to buy it separately.</div>
+                <div className="include_text">Your mudgar will be delivered at your given address in 12-15 days.</div>
               </div>
             </div>
           </div>

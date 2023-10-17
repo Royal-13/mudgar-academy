@@ -28,7 +28,7 @@ function Host({}: Props) {
                 <a href="/hostdetails">
                   <h3 className="brown_heading_1">Anjit Suhag</h3>
                 </a>
-                <p className="about_text">Founder</p>
+                <p className="about_text">Founder and Mentor</p>
               </div>
             </div>
           </motion.div>
@@ -52,7 +52,7 @@ function Host({}: Props) {
                 <a href="/instructordetails">
                   <h3 className="brown_heading_1">Jyotsana</h3>
                 </a>
-                <p className="about_text">Instructor</p>
+                <p className="about_text">Mentor</p>
               </div>
             </div>
           </motion.div>
