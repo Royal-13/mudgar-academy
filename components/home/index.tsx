@@ -14,6 +14,7 @@ import Footer1 from "./footer1";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AnimatePresence } from "framer-motion";
+import { SocialIcon } from "react-social-icons";
 
 type Props = {
   session: boolean;
@@ -80,6 +81,7 @@ export default function HomePage({ session }: Props) {
         pauseOnHover
         theme="light"
       />
+      <SocialIcon  url='https://wa.me/7895079507' target="_blank" rel='noopener noreferrer' network='whatsapp' />
       <Header session={session} />
       <Hero />
       <main id="main">
