@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./host-details.module.css";
+import styles from "./instructor-details.module.css";
 import content from "../../config/host-details.json";
 
 type Props = {};
 
-function HostDetail({}: Props) {
+function InstructorDetail({}: Props) {
   return (
     <div className={styles.fullwidth}>
       <div className={styles["coach-container"]}>
@@ -16,7 +16,7 @@ function HostDetail({}: Props) {
               <div className={styles["header-content-container"]}>
                 <div className={styles["header-content"]}>
                   <div className={styles["profile-name-container"]}>
-                    <h1 className={styles["profile-name"]}>{content.name}</h1>
+                    <h1 className={styles["profile-name"]}>{content.name1}</h1>
                     <ul className={styles["social"]}>
                       <li className={styles["facebook"]}>
                         <a
@@ -97,7 +97,7 @@ function HostDetail({}: Props) {
                   <img
                     alt="Anjit"
                     className={styles["profile-photo-image"]}
-                    src="/img/host-profile-desktop.jpg"
+                    src="/img/profile-desktop-1.jpg"
                   />
                 </div>
               </div>
@@ -105,7 +105,7 @@ function HostDetail({}: Props) {
                 <div className={styles["profile-bio-container"]}>
                   <div>
                     <div className={styles["profile-bio"]}>
-                      {content.bio.map(
+                      {content.bio1.map(
                         (
                           paragraph:
                             | string
@@ -139,4 +139,4 @@ function HostDetail({}: Props) {
   );
 }
 
-export default HostDetail;
+export default InstructorDetail;
