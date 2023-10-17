@@ -97,7 +97,7 @@ function InstructorDetail({}: Props) {
                   <img
                     alt="Anjit"
                     className={styles["profile-photo-image"]}
-                    src="/img/profile-desktop-1.jpg"
+                    src="/img/profile-desktop-1-min.jpg"
                   />
                 </div>
               </div>
