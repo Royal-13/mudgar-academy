@@ -10838,7 +10838,7 @@ a:hover {
     padding-top: 0;
   }
   .benefits_block_content img {
-    height: auto;
+    /* height: auto; */
     width: auto;
   }
   #header .logo {

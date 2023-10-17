@@ -502,7 +502,7 @@ div.learn_side {
   }
   .benefits_desc {
     font-size: 19px !important;
-    color: #344773 !important;
+    color: #965940 !important;
     margin-top: 5px !important;
     letter-spacing: -1px;
     line-height: 1.2;
@@ -1350,6 +1350,12 @@ input.loading {
     margin-left: 0px;
   }
 
+}
+/* BenefitsSection.css */
+.consistent-height {
+  object-fit: cover;
+  height: 100%; /* Set the height to 100% of the parent container */
+  width: 100%; /* Ensure the image takes up the full width of its container */
 }
 
 /* .select-arrow-1 {

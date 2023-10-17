@@ -20,7 +20,7 @@ function BenefitsSection({}: Props) {
             <div className="benefits_block_content">
               <img
                 loading="lazy"
-                className="img-fluid"
+                className="img-fluid consistent-height"
                 srcSet="/img/benifits/tiny2/active start-min.jpg 480w,/img/benifits/tiny2/active start-min.jpg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
                 src="/img/benifits/tiny2/active start-min.jpg"
@@ -37,7 +37,7 @@ function BenefitsSection({}: Props) {
             <div className="benefits_block_content">
               <img
                 loading="lazy"
-                className="img-fluid"
+                className="img-fluid consistent-height"
                 srcSet="/img/benifits/tiny2/strength-min.jpg 480w,/img/benifits/tiny2/strength-min.jpg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
                 src="/img/benifits/tiny2/strength-min.jpg"
@@ -58,7 +58,7 @@ function BenefitsSection({}: Props) {
             <div className="benefits_block_content">
               <img
                 loading="lazy"
-                className="img-fluid"
+                className="img-fluid consistent-height"
                 srcSet="/img/benifits/tiny2/motion-min.jpg 480w,/img/benifits/tiny2/motion-min.jpg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
                 src="/img/benifits/tiny2/motion-min.jpg"
@@ -75,7 +75,7 @@ function BenefitsSection({}: Props) {
             <div className="benefits_block_content">
               <img
                 loading="lazy"
-                className="img-fluid"
+                className="img-fluid consistent-height"
                 srcSet="/img/benifits/tiny2/body-min.jpg 480w,/img/benifits/tiny2/body-min.jpg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
                 src="/img/benifits/tiny2/body-min.jpg"
@@ -94,7 +94,7 @@ function BenefitsSection({}: Props) {
             <div className="benefits_block_content benefits_block_content_middle pt-0">
               <img
                 loading="lazy"
-                className="img-fluid"
+                className="img-fluid consistent-height"
                 srcSet="/img/benifits/tiny2/mind-min.jpg 480w,/img/benifits/tiny2/mind-min.jpg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
                 src="/img/benifits/tiny2/mind-min.jpg"
@@ -111,7 +111,7 @@ function BenefitsSection({}: Props) {
             <div className="benefits_block_content">
               <img
                 loading="lazy"
-                className="img-fluid"
+                className="img-fluid consistent-height"
                 srcSet="/img/benifits/tiny2/freedom-min.jpg 480w,/img/benifits/tiny2/freedom-min.jpg 800w"
                 sizes="(max-width: 600px) 480px, 800px"
                 src="/img/benifits/tiny2/freedom-min.jpg"
