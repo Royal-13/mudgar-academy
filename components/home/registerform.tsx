@@ -344,7 +344,7 @@ function RegisterForm({}: Props) {
             </div>
           </div>
 
-          <div className="row ">
+          {/* <div className="row ">
             <div
               className="col-sm-12 col-lg-6 mb-4 mb-sm-3 mb-md-3 w-100 d-flex"
               id="time_slot_div"
@@ -391,7 +391,7 @@ function RegisterForm({}: Props) {
                 </option>
               </select>
             </div>
-          </div>
+          </div> */}
 
           {/* <div className="row">
             <div className="col-sm-12 col-lg-12 mb-3 mb-sm-0">

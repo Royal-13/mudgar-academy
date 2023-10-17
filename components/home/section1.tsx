@@ -4,9 +4,9 @@ import {motion} from 'framer-motion'
 type Props = {};
 
 function SectionOne({ }: Props) {
-  const [selectedTime, setSelectedTime] = useState("6 AM (IST)"); // Default selected time
+  const [selectedTime, setSelectedTime] = useState("6-7 AM (IST)"); // Default selected time
   const [isOpen, setIsOpen] = useState(false);
-  const timeOptions = ["6 AM (IST)", "7 AM (IST)", "10 AM (IST)", "6 PM (IST)", "7 PM (IST)"];
+  const timeOptions = ["6-7 AM (IST)", "7-8 AM (IST)", "6-7 PM (IST)"];
 
   const handleTimeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedTime(event.target.value);
