@@ -123,8 +123,7 @@ const Float = () => {
       <div className="register_mobile">
         <div className="register_mobile_heading">
           <h3>
-            Movement <br />
-            With Mudgar
+            Early Bird Offer
           </h3>
           <a
             href="/login"
@@ -141,10 +140,10 @@ const Float = () => {
           </a>
         </div>
         <div className="register_mobile_detail">
-          <span className="date-and-time offer" id="sale-time"><img loading="lazy" src="/img/saletime.png" alt="Sale" />Early Bird Offer:
-          ₹<s>6000</s> 4700
+          <span className="date-and-time offer-1" id="sale-time"><img loading="lazy" src="/img/saletime.png" alt="Sale" />
+          ₹<s>6000</s> 4700/
           </span>
-          <span className="date-and-time register_count_mobile"><img loading="lazy" src="/img/group.png" alt="Group" width={100} height={100} /><span><strong>1065</strong> registered</span></span>
+          <span className="date-and-time register_count_mobile"><span>*Mudgar <strong> is Included</strong> in the fees.</span></span>
         </div>
       </div>
     </>

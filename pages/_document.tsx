@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="manifest" href="/manifest.json" />
-        <link href="/img/meta_icon/favicon.ico" rel="icon" />
         <link href="/img/meta_icon/favicon.ico" rel="apple-touch-icon" />
         <link
           rel="preload"

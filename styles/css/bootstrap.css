@@ -10741,6 +10741,12 @@ a:hover {
   font-size: 15px !important;
   animation: blink 2s linear infinite;
 }
+.offer-1 {
+  color: red !important;
+  font-weight: 700;
+  font-size: 25px !important;
+  animation: blink 2s linear infinite;
+}
 .right_block .date-and-time {
   color: #0c0c0c;
   font-size: 11px;
@@ -10939,7 +10945,6 @@ a:hover {
   }
   .register_mobile .date-and-time {
     color: #0c0c0c;
-    font-size: 11px;
     display: block;
     margin-bottom: 10px;
   }
