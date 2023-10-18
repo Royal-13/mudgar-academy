@@ -44,7 +44,7 @@ function Countdown() {
 
   useEffect(() => {
     // Define the deadline as a string in ISO format.
-    const deadline = new Date(2023, 9, 18, 23).toISOString();
+    const deadline = new Date(2023, 9, 24, 23).toISOString();
 
     // Initialize the clock with the specified ID and deadline.
     initializeClock('clockdiv', deadline);
