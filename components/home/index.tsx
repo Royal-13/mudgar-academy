@@ -101,7 +101,7 @@ export default function HomePage({ session }: Props) {
                 <SectionFour />
                 <FAQ />
                 <Host />
-                <RegisterForm />
+                {/* <RegisterForm /> */}
               </div>
               <AnimatePresence>
               <div className="right_block_container">

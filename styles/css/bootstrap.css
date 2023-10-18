@@ -9891,6 +9891,31 @@ a:hover {
 #register_form .btn-get-started:hover img {
   filter: brightness(0) invert(1);
 }
+#register_form-1 .btn-get-started {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 3px;
+  margin-top: 25px;
+  color: #fd9f1a;
+  background: #fff;
+  border-radius: 50px;
+  font-family: Nunito;
+  width: 200px;
+  transition: 0.1s all ease-in-out;
+  border: none !important;
+}
+#register_form-1 .btn-get-started:hover {
+  background: -moz-linear-gradient(left, #fcae36 0, #ff9100 100%);
+  background: -webkit-linear-gradient(left, #fcae36 0, #ff9100 100%);
+  background: linear-gradient(to right, #fcae36 0, #ff9100 100%);
+}
+#register_form-1 .btn-get-started:hover img {
+  filter: brightness(0) invert(1);
+}
 .mobile_hidden {
   display: inline-block;
 }
@@ -10339,6 +10364,17 @@ a:hover {
   line-height: 33px;
 }
 #register_form {
+  background: #e3a54a;
+  background: -moz-linear-gradient(-45deg, #e3a54a 0, #dfc53b 100%);
+  background: -webkit-linear-gradient(-45deg, #e3a54a 0, #dfc53b 100%);
+  background: linear-gradient(135deg, #e3a54a 0, #dfc53b 100%);
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #f3f3f3;
+}
+#register_form-1 {
   background: #e3a54a;
   background: -moz-linear-gradient(-45deg, #e3a54a 0, #dfc53b 100%);
   background: -webkit-linear-gradient(-45deg, #e3a54a 0, #dfc53b 100%);
@@ -11203,6 +11239,10 @@ section {
     padding: 15px 20px;
     width: 171px;
   }
+  #register_form-1 .btn-get-started {
+    padding: 15px 20px;
+    width: 171px;
+  }
   .register_mobile_details .date-and-time {
     color: #fff;
     font-size: 14px;
@@ -11451,6 +11491,9 @@ section {
     order: 1;
   }
   #register_form {
+    padding: 30px 0;
+  }
+  #register_form-1{
     padding: 30px 0;
   }
   .people_block .name {

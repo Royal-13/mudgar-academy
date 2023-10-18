@@ -77,6 +77,13 @@ div#thumb_0 {
   }
 }
 
+#register_form-1 .btn-get-started:hover{
+  background: #c77201;
+  background: linear-gradient(to right, #c77201 0%, #c77201 100%);
+  transition: 0.3s all ease-in-out;
+  color: #fff;
+}
+
 #register_form .btn-get-started:hover {
   background: #c77201;
   background: linear-gradient(to right, #c77201 0%, #c77201 100%);
@@ -392,6 +399,11 @@ div#register_form,
 .countdown_mobile {
   background: #965940!important;
 }
+
+div#register_form-1{
+  background: #965940!important;
+  margin: 80px;
+}
 a.nav-link.scrollto.register-now {
   background: #fff;
 }
@@ -422,6 +434,12 @@ a.top_menu_register.scrollto {
   border: 2px solid #37945f !important;
 }
 #register_form .btn-get-started:hover,
+#registration_closed_form .btn-get-started:hover {
+  background: linear-gradient(to right, #965940 0, #16699f 100%) !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+#register_form-1 .btn-get-started:hover,
 #registration_closed_form .btn-get-started:hover {
   background: linear-gradient(to right, #965940 0, #16699f 100%) !important;
   color: #fff !important;
@@ -691,6 +709,10 @@ div#time_slot_error {
   font-weight: 900 !important;
 }
 #register_form .btn-get-started {
+  letter-spacing: -1px;
+  border: 2px solid transparent !important;
+}
+#register_form-1 .btn-get-started{
   letter-spacing: -1px;
   border: 2px solid transparent !important;
 }

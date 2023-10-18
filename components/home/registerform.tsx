@@ -144,7 +144,7 @@ function RegisterForm({}: Props) {
   };
 
   return (
-    <div id="register_form" className="register_form text-center">
+    <div id="register_form-1" className="register_form-1 text-center">
       <span className="date-and-time offer">
         <img
           loading="lazy"

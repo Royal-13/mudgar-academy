@@ -65,7 +65,7 @@ const Float = () => {
           <span id="center-align-1">4700</span>
         </span>
         <a
-          href="#register_form"
+          href="/register"
           className="btn-get-started scrollto right_register register-now-track-btn"
           id="register_right_button"
           data-btn="bottom-side"
@@ -134,7 +134,7 @@ const Float = () => {
             Login
           </a>
           <a
-            href="#register_form"
+            href="/register"
             className="btn-get-started scrollto right_register_text"
           >
             Register
