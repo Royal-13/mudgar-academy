@@ -61,7 +61,7 @@ const Float = () => {
             width={100}
             height={100}
           />{" "}
-          Early Bird Offer:₹ <s>6000</s> <br/>
+          Early Bird Offer:₹ <s>7000</s> <br/>
           <span id="center-align-1">4700</span>
         </span>
         <a
@@ -141,9 +141,9 @@ const Float = () => {
         </div>
         <div className="register_mobile_detail">
           <span className="date-and-time offer-1" id="sale-time"><img loading="lazy" src="/img/saletime.png" alt="Sale" />
-          ₹<s>6000</s> 4700/
+          ₹<s>7000</s> 4700/
           </span>
-          <span className="date-and-time register_count_mobile"><span>*Mudgar <strong> is Included</strong> in the fees.</span></span>
+          <span className="date-and-time register_count_mobile"><span><strong>*Mudgar is Included in the fees.</strong> </span></span>
         </div>
       </div>
     </>

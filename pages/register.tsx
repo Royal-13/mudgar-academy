@@ -9,11 +9,11 @@ type Props = {}
 
 function Register({}: Props) {
   return (
-    <>
+    <div className='reg'>
         <Header/>
         <RegisterForm/>
         <Footer1/>
-    </>
+    </div>
   )
 }
 

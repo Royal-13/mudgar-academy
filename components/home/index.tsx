@@ -81,7 +81,7 @@ export default function HomePage({ session }: Props) {
         pauseOnHover
         theme="light"
       />
-      <SocialIcon  url='https://wa.me/7895079507' target="_blank" rel='noopener noreferrer' network='whatsapp' />
+      <SocialIcon className="whatsapp" url='https://wa.me/7895079507' target="_blank" rel='noopener noreferrer' network='whatsapp' />
       <Header session={session} />
       <Hero />
       <main id="main">

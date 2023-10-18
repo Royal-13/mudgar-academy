@@ -145,13 +145,13 @@ function RegisterForm({}: Props) {
 
   return (
     <div id="register_form-1" className="register_form-1 text-center">
-      <span className="date-and-time offer">
+      <span className="date-and-time">
         <img
           loading="lazy"
-          src="/img/saletime.png"
+          src="/img/mudgaracademylogo.png"
           alt="Date"
-          width={100}
-          height={100}
+          width={250}
+          height={90}
         />{" "}
       </span>
       <h3 className="register_tag">Register Now</h3>
@@ -214,7 +214,7 @@ function RegisterForm({}: Props) {
           />
           <input type="hidden" name="country" id="country" defaultValue="" /> */}
           <div className="row">
-            <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0">
+            <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0 ">
               <label className="d-none">Name</label>
               <input
                 type="text"

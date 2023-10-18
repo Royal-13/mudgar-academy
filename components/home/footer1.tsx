@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons/faFacebook";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons/faInstagram";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons/faYoutube";
+import { SocialIcon } from "react-social-icons";
 
 type Props = {};
 
@@ -80,21 +81,24 @@ function Footer1({}: Props) {
       <div className={styles1.socialIcons}>
           <a
             href="https://youtube.com/@MudgarClub?si=itOu-qmO42WkGxpz"
+            target="_blank" rel='noopener noreferrer'
             className={styles1.socialIcon}
           >
-            <FontAwesomeIcon icon={faFacebook} />
+            <SocialIcon network='facebook' />
           </a>
           <a
             href="https://youtube.com/@MudgarClub?si=itOu-qmO42WkGxpz"
+            target="_blank" rel='noopener noreferrer'
             className={styles1.socialIcon}
           >
-            <FontAwesomeIcon icon={faYoutube} />
+            <SocialIcon  network='youtube' />
           </a>
           <a
             href="https://instagram.com/mudgarclub?igshid=MzRlODBiNWFlZA=="
+            target="_blank" rel='noopener noreferrer'
             className={styles1.socialIcon}
           >
-            <FontAwesomeIcon icon={faInstagram} />
+            <SocialIcon  network='instagram' />
           </a>
         </div>
     </footer>

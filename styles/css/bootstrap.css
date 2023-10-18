@@ -168,7 +168,7 @@ ul ol,
 ul ul {
   margin-bottom: 0;
 }
-.social-icon{
+.whatsapp{
   margin-top:600px;
   z-index: 100;
   width: 50px;
@@ -10397,7 +10397,7 @@ a:hover {
   box-shadow: 0 0 8px #f3f3f3;
 }
 .form_block label {
-  color: #fff;
+  color: black;
   text-align: left;
   width: 100%;
   padding-left: 20px;
@@ -10421,11 +10421,11 @@ a:hover {
   width: 100%;
   font-size: 17px;
   background: 0 0;
-  border: 2px solid #fff;
+  border: 2px solid white;
   border-radius: 50px;
 }
 .form_block ::-webkit-input-placeholder {
-  color: #fff !important;
+  color: black !important;
 }
 .form_block ::-moz-placeholder {
   color: #fff !important;
@@ -10440,7 +10440,7 @@ a:hover {
   margin-bottom: 30px;
 }
 .contribution {
-  color: white;
+  color: blue;
   font-size: 17px;
   font-family: Nunito;
   font-weight: 700;
