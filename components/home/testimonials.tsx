@@ -6,7 +6,7 @@ function Testimonial({}: Props) {
     <div id="people" className="white_block people">
       <h3 className="brown_heading text-center mb-2">People are saying</h3>
       <h5 className="text-center review_location  mb-4 ln-23">
-        3500+ people have already completed the Movement With Mudgar
+        1200+ people have already completed the Movement With Mudgar
       </h5>
       <div className="row">
         <div className="col-sn-12 col-nd-5 col-lg-4">
@@ -21,19 +21,12 @@ function Testimonial({}: Props) {
               <img
                 loading="lazy"
                 className="review_img"
-                src="/img/review_images/new/amit_sinha.png"
+                src="/img/testimonials/vipin.jpeg"
                 alt="People"
               />
-              <div className="review_name">Amit Sinha</div>
-              <div className="review_location">38, Dehradun</div>
+              <div className="review_name">Vipina Sinha</div>
+              <div className="review_location"></div>
               <div>
-                <img
-                  loading="lazy"
-                  src="/img/star.png"
-                  alt="Star"
-                  width={20}
-                  height={19}
-                />
                 <img
                   loading="lazy"
                   src="/img/star.png"
@@ -64,11 +57,17 @@ function Testimonial({}: Props) {
                 />
               </div>
               <div className="review_detail show-read-more">
-                I've struggled with back pain for years. But after joining
-                'Movement with Mudgar,' guided by the incredible Anjit, I've
-                experienced a profound transformation. His expert guidance and
-                the mudgar workouts have relieved my pain and restored my
-                quality of life.
+                Mudgar practice has worked for me. I had not done any exercise
+                in the last 10 year and was looking to start exercising again.
+                Tried martial art warm-ups but my hamstring got pulled on the
+                first day, tried yoga training and damaged by knee while
+                stretching, then setup a gym at home for light weight training
+                and tore my shoulder muscle and couldnt do any exercise for 4
+                months. Had developed problem in lower back as well. Have been
+                practicing Mudgar following your training with disciple since a
+                month and have been improving daily. My hand grip has improved,
+                whole arms are developing nicely and also my core is becoming
+                stronger. Thank you.
               </div>
             </div>
           </motion.div>
@@ -83,19 +82,12 @@ function Testimonial({}: Props) {
               <img
                 loading="lazy"
                 className="review_img"
-                src="/img/review_images/new/amit_sinha.png"
+                src="/img/testimonials/vipin.jpeg"
                 alt="People"
               />
-              <div className="review_name">Amit Sinha</div>
-              <div className="review_location">38, Dehradun</div>
+              <div className="review_name">Vipina</div>
+              <div className="review_location"></div>
               <div>
-                <img
-                  loading="lazy"
-                  src="/img/star.png"
-                  alt="Star"
-                  width={20}
-                  height={19}
-                />
                 <img
                   loading="lazy"
                   src="/img/star.png"
@@ -126,11 +118,17 @@ function Testimonial({}: Props) {
                 />
               </div>
               <div className="review_detail show-read-more">
-                I've struggled with back pain for years. But after joining
-                'Movement with Mudgar,' guided by the incredible Anjit, I've
-                experienced a profound transformation. His expert guidance and
-                the mudgar workouts have relieved my pain and restored my
-                quality of life.
+                Mudgar practice has worked for me. I had not done any exercise
+                in the last 10 year and was looking to start exercising again.
+                Tried martial art warm-ups but my hamstring got pulled on the
+                first day, tried yoga training and damaged by knee while
+                stretching, then setup a gym at home for light weight training
+                and tore my shoulder muscle and couldn&apos;t do any exercise for 4
+                months. Had developed problem in lower back as well. Have been
+                practicing Mudgar following your training with disciple since a
+                month and have been improving daily. My hand grip has improved,
+                whole arms are developing nicely and also my core is becoming
+                stronger. Thank you.
               </div>
             </div>
           </motion.div>

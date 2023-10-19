@@ -61,6 +61,7 @@ function Header({session}: Props) {
                 FAQs
               </a>
             </li>
+            
             <li>
               <a
                 className="nav-link scrollto menu-btn"
@@ -91,7 +92,17 @@ function Header({session}: Props) {
               </button>
             </li>
             )}
+            <li>
+              <a
+                className="nav-link scrollto menu-btn"
+                data-menu="dashboard"
+                href="/dashboard"
+              >
+                Dashboard
+              </a>
+            </li>
           </ul>
+          
         </nav>
       </div>
     </header>
