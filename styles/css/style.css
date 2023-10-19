@@ -1376,6 +1376,10 @@ input.loading {
   }
 
 }
+#row-center{
+  justify-content: center;
+  align-items: center;
+}
 /* BenefitsSection.css */
 
 

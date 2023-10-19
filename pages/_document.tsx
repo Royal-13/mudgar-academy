@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="manifest" href="/manifest.json" />
-        <link href="/img/meta_icon/favicon.ico" rel="apple-touch-icon" />
+        <link href="/favicon.ico" rel="apple-touch-icon" />
         <link
           rel="preload"
           href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap"

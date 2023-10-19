@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="og:description"
           content="Learn Mudgar Online, Mudgar Classes, Improve your stamina, Build a healthy body"
         ></meta>
-        <link rel="icon" href="/img/mudgarclub_logo.jpg"></link>
+        <link rel="icon" href="/favicon.ico"></link>
       </Head>
       <Script
         src="https://analytics.eu.umami.is/script.js"
