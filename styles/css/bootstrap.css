@@ -11638,7 +11638,7 @@ section {
     font-size: 17px;
   }
   #header .logo {
-    margin-top: -7px !important;
+    margin:auto;
   }
   .curr_left::after {
     margin: -75px 0 0 88px;
