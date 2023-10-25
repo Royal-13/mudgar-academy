@@ -203,7 +203,7 @@ function FAQ({}: Props) {
           >
             <div className="accordion-body">
               Yes, u shall be delivered mudgar once you register for the course.
-              3kgs for women and 5kgs for females.{" "}
+              3kgs for women and 5kgs for men.{" "}
             </div>
           </div>
         </div>
