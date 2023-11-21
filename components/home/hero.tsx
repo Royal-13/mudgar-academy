@@ -36,14 +36,14 @@ function Hero({}: Props) {
               <div className="gray_line" />
               <div className="countdown_desktop"><div className="counter_block">
                   <div className="counter_block_text"> Early Bird Offer !!!</div>
-                  <div id="clockdiv" className="counter_digit_block">
+                  {/* <div id="clockdiv" className="counter_digit_block">
                     <div className="block"><div className="counter_digit days " /><span>days</span></div>
                     <div className="block"><div className="counter_digit hours" /><span>hours</span></div>
                     <div className="block"><div className="counter_digit minutes" /><span>mins</span></div>
                     <div className="block"><div className="counter_digit seconds" /><span>secs</span></div>
-                  </div>
+                  </div> */}
                 </div>
-                <Countdown/>
+                {/* <Countdown/> */}
               </div>
             </div>
             <div className="col-lg-6 pt-4 main_video pe-0 pe-sm-5 d-flex align-content-end" id="homepageimage">
