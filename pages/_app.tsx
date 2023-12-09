@@ -27,8 +27,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico"></link>
       </Head>
       <Script
-        src="https://analytics.eu.umami.is/script.js"
-        data-website-id="a8b5e580-fa1b-438f-97ec-f687d2c96ddd"
+        src="https://nimble-truffle-653adf.netlify.app/script.js"
+        data-website-id="12300d90-fce2-43e7-8fc5-1e4b96488d1b"
       />
       <SessionContextProvider
         supabaseClient={supabaseClient}
