@@ -35,7 +35,7 @@ function Hero({}: Props) {
                   Learn 30-40 </span> types of Mudgar swings in these 3 months</div>
               <div className="gray_line" />
               <div className="countdown_desktop"><div className="counter_block">
-                  <div className="counter_block_text"> Early Bird Offer !!!</div>
+                  {/* <div className="counter_block_text"> Early Bird Offer !!!</div> */}
                   {/* <div id="clockdiv" className="counter_digit_block">
                     <div className="block"><div className="counter_digit days " /><span>days</span></div>
                     <div className="block"><div className="counter_digit hours" /><span>hours</span></div>
