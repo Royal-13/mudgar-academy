@@ -1,21 +1,33 @@
+import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
-type Props = {};
+type Props = {
+  session?: boolean;
+};
 
-function Header({}: Props) {
+function Header({session}: Props) {
+  const router = useRouter();
+  const supabaseClient = useSupabaseClient();
+  const logout = async () => {
+    const { error } = await supabaseClient.auth.signOut();
+    if (!error) {
+      location.reload();
+    }
+  }
   return (
     <header id="header" className="fixed-top">
       <div className="container d-flex align-items-center justify-content-between my-1 px-4">
         <h1 className="logo">
-          <a href="index.html">
+          <a href="/">
             <img
               loading="lazy"
-              src="resources/img/doit"
+              src="/img/mudgaracademylogo.png"
               alt="Logo"
-              width="250px"
-              height="250px"
+              width="200px"
+              height="50px"
             />
           </a>
         </h1>
@@ -24,18 +36,18 @@ function Header({}: Props) {
             <li>
               <a
                 className="nav-link scrollto menu-btn"
-                data-menu="benefit"
-                href="/"
-                target="_blank"
+                data-menu="shop"
+                href="https://mudgarclub.com/"
+                target=""
               >
-                Workshop Login
+                Our Shop
               </a>
             </li>
             <li>
               <a
                 className="nav-link scrollto menu-btn"
                 data-menu="benefit"
-                href="index.html#benefits"
+                href="/#benefits"
               >
                 Benefits
               </a>
@@ -44,31 +56,53 @@ function Header({}: Props) {
               <a
                 className="nav-link scrollto menu-btn"
                 data-menu="faq"
-                href="index.html#faq"
+                href="/#faq"
               >
                 FAQs
               </a>
             </li>
+            
             <li>
               <a
                 className="nav-link scrollto menu-btn"
                 data-menu="about"
-                href="index.html#about"
+                href="/#about"
               >
                 About
               </a>
             </li>
-            <li>
-              {" "}
-              <a
-                className="nav-link scrollto register-now register-now-track-btn"
-                data-btn="top-bar"
-                href="index.html#register_form"
+            {session ? (
+              <li>
+              <button
+                className="nav-link scrollto menu-btn"
+                data-menu="login"
+                onClick={logout}
               >
-                Register Now
+                Logout
+              </button>
+            </li>
+            ):(
+              <li>
+              <button
+                className="nav-link scrollto menu-btn"
+                data-menu="login"
+                onClick={() => {router.push("/login")}}
+              >
+                Login
+              </button>
+            </li>
+            )}
+            <li>
+              <a
+                className="nav-link scrollto menu-btn"
+                data-menu="dashboard"
+                href="/dashboard"
+              >
+                Dashboard
               </a>
             </li>
           </ul>
+          
         </nav>
       </div>
     </header>
